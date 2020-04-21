@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* 版心开始 */
+.w {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+/* 版心结束*/
+
+.footer{
+  width: 1903px;
+  margin: 0 auto;
+}
+.copyright {
+  height: 107px;
+  padding-top: 40px;
+  background-color: #272a2c;
+  color: #fff;
+}
+.copyright a {
+  color: #fff;
+}
+
+.center-block {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.game-163-link li {
+  float: left;
+}
+.game-163-link li:last-child {
+  margin-left: 15px;
+  margin-right: 18px;
+}
+
+.concat {
+  float: left;
+}
+.concat span {
+  float: left;
+}
+.concat span:before {
+  content: '-';
+  margin: 0 4px;
+}
+.concat span:first-child:before {
+  display: none;
+}
+.concat span:hover a {
+  text-decoration: underline;
+}
+
+.copyright-txt {
+  float: left;
+  padding-top: 14px;
+}
+.copyright-txt a {
+  margin-left: 22px;
+}
+.copyright-txt a:hover {
+  text-decoration: underline;
+}
+
+.licence {
+  margin-top: 22px;
+  float: left;
+}
+
+/* 网页底部结束 */
+
+/*# sourceMappingURL=index.css.map */

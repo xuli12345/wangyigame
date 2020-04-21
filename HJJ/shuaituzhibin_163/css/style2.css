@@ -1,0 +1,547 @@
+/*顶部通栏*/
+#shortcut {
+    height: 54px;
+}
+
+#shortcut iframe{
+    height: 600px;
+    z-index: 1;
+}
+
+/*主体部分*/
+#main {
+    height: 750px;
+    background: url("../images/bg1.jpg") no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+#logo {
+    width: 200px;
+    background: url("../images/logo.png") no-repeat;
+    background-position: center center;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+#logo h1 {
+    height: 75px;
+    text-indent: -999px;
+}
+
+#main #logo p {
+    color: #8a524a;
+    font-size: 14px;
+    text-align: center;
+}
+
+#slogan {
+    width: 604px;
+    height: 255px;
+    left: 10%;
+    background: url("../images/slogan.png");
+    background-position: center center;
+}
+
+#media {
+    width: 685px;
+    height: 128px;
+    left: 50%;
+    margin-left: -350px;
+    bottom: 120px;
+}
+
+#media #download {
+    width: 540px;
+    height: 128px;
+    background: url("../images/dl-bg.png");
+    border: 1px solid #957a52;
+    border-radius: 10px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#media #download span {
+    width: 106px;
+    height: 105px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#media #download #_btn {
+    flex-basis: 172px;
+    background:url("../images/download.png");
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#media #download #_btn #link_apple {
+    flex-basis: 50%;
+}
+
+#media #download #_btn #link_android {
+    flex-basis: 50%;
+}
+
+#media #download #_btn #link_apple:hover {
+    background: url("../images/dl_phone.png");
+}
+
+#media #download #_btn #link_android:hover {
+    background: url("../images/dl_phone.png");
+    background-position: 0 -54px;
+}
+
+#media #download span img {
+    width: 106px;
+    height: 105px;
+}
+
+#media #download_pc a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("../images/dl_pc.png");
+}
+
+#media #download_pc #dl_details {
+    width: 358px;
+    height: 128px;
+    background: url("../images/dld-pc-details.png");
+    top: -1px;
+    right: -360px;
+    z-index: 10;
+}
+
+#media #dl_details p {
+    padding: 8px 24px;
+    color: #333;
+    line-height: 22px;
+}
+
+#media #video_links {
+    height: 128px;
+    width: 128px;
+    background-color: rgba(0,0,0,.5);
+    right: 0;
+    border: 1px solid #957a52;
+    border-radius: 10px;
+    background-size: 128px 118px;
+    background-position: 0 0;
+}
+
+#media #video_links a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/video_btn.png") no-repeat;
+    background-position: center center;
+}
+
+#media #video_links i {
+    width: 71px;
+    height: 71px;
+    overflow: hidden;
+    background: url("../images/index_z_2a9d5db.png") no-repeat;
+    background-position: -128px 0;
+    position: absolute;
+    left: 27px;
+    top: 26px;
+    text-align: center;
+}
+
+.animation {
+    animation:spin 2s linear infinite alternate;
+}
+@-webkit-keyframes spin {
+    /* from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    } */
+
+
+}
+
+.suspended{
+    animation-play-state: paused;
+}
+
+
+/*视频播放盒子*/
+#video_pop {
+    width: 900px;
+    height: 510px;
+    left: 50%;
+    margin-left: -450px;
+    top: 50%;
+    margin-top: -255px;
+    z-index: 10001;
+}
+
+#video_pop #video_close {
+    width: 50px;
+    height: 50px;
+    background: url("../images/vclose_65e1dad.png");
+    right: -50px;
+    top: 0;
+    background-color: white;
+}
+
+#video-content {
+    overflow: hidden;
+}
+
+#bigMask {
+    background-color:rgba(0,0,0,.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+
+/*页面楼层部分*/
+/*新手福利楼层*/
+#floor #welfare {
+    height: 956px;
+    background: url("../images/bg2.jpg") no-repeat;
+    background-position: center center;
+}
+
+#welfare #welfare_title {
+    text-align: center;
+    padding-top: 50px;
+}
+#welfare_title img {
+    margin-left: -20px;
+}
+
+#welfare_details {
+    height: 323px;
+    background: url("../images/welfare-details.jpg") no-repeat;
+    margin-top: 120px;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+}
+
+._slideUp {
+    animation: slideUp 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    from {
+        margin-top:300px;
+        filter:alpha(opacity=30);
+        -moz-opacity:0.3;
+        opacity:0.1;
+    }
+    to {
+        margin-top:120px;
+        filter:alpha(opacity=100);-moz-opacity:1;opacity:1;
+    }
+}
+
+#welfare_details li {
+    width: 170px;
+    height: 320px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#welfare_details li p {
+    height: 54px;
+    padding: 20px;
+    background: url("../images/welfare_details_li.jpg");
+    color: white;
+    font-size: 14px;
+    line-height: 170%;
+    position: absolute;
+    bottom: -94px;
+    transition: 0.3s;
+}
+
+#welfare_details li:hover p {
+    transform: translateY(-94px);
+}
+
+/*福利详情弹出页*/
+#welfare_pop {
+    width: 810px;
+    height: 400px;
+    top: 40%;
+    left: 50%;
+    margin-left: -405px;
+    margin-top: -200px;
+    z-index: 10001;
+}
+
+#welfare_pop #details_close {
+    width: 32px;
+    height: 32px;
+    background: url("../images/close.png");
+    background-size: 32px ;
+    cursor: pointer;
+    right: 0;
+    top: 10px;
+    z-index: 999;
+}
+
+#welfare_pop h3 {
+    width: 100%;
+    height: 40px;
+    background-position: center center;
+}
+
+.ind0 {
+    background: url("../images/details_titlebg0000.png") no-repeat;
+}
+.ind1 {
+    background: url("../images/details_titlebg1111.png") no-repeat;
+}
+.ind2 {
+    background: url("../images/details_titlebg2222.png") no-repeat;
+}
+.ind3 {
+    background: url("../images/details_titlebg3333.png") no-repeat;
+}
+.ind4 {
+    background: url("../images/details_titlebg4444.png") no-repeat;
+}
+.ind5 {
+    background: url("../images/details_titlebg5555.png") no-repeat;
+}
+.ind6 {
+    background: url("../images/details_titlebg6666.png") no-repeat;
+}
+.ind7 {
+    background: url("../images/details_titlebg7777.png") no-repeat;
+}
+
+#welfare_pop .text{
+    width: 800px;
+    background: url("../images/welfare_details_popbg.jpg") no-repeat;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+#welfare_pop .con {
+    width: 780px;
+    border: 1px solid #3b3637;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#welfare_pop .con p {
+    width: 630px;
+    color: #d4c6a9;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*沙盘战略楼层*/
+#guide {
+    height: 911px;
+    background: url("../images/bg3.jpg") no-repeat;
+    background-position: center center;
+    background-size:cover
+}
+
+#guide_title {
+    text-align: center;
+    padding-top: 50px;
+}
+#guide_title img {
+    margin-left: -20px;
+}
+
+#guide #slideShow {
+    width: 1120px;
+    height: 405px;
+    margin: 30px auto 0;
+    position: relative;
+    display: none;
+}
+
+#guide #slideShow ul {
+    width: 2160px;
+    height: 405px;
+    left: -520px;
+    perspective:1300px;
+}
+
+#guide #slideShow li {
+    transition: all 0s ease 0s;
+    margin-left: -360px;
+    transition-duration: 500ms;
+    /*之后有改变*/
+    transform: translate3d(0px, 0px, -4320px) rotateX(0deg) rotateY(0deg);
+}
+
+._items {
+    position:absolute;
+    left:50%;
+    top:0;
+    z-index:-10;
+    opacity:0;
+    width: 720px;
+    height: 405px;
+    transition:all ease;
+}
+
+#guide #slideShow li a {
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 405px;
+    z-index: 80;
+}
+
+#guide #slideShow .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .4;
+    cursor: pointer;
+}
+
+#guide #slideShow a:hover {
+    text-decoration: none;
+}
+
+#guide #slideShow i {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+    border: 1px solid #756342;
+}
+
+
+._left {
+    transform: translate3d(-370px, 0px, -540px) rotateX(0deg) rotateY(50deg) !important;
+    opacity: 1 !important;
+    z-index: 5!important
+}
+
+._current {
+    transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) !important;
+    opacity: 1 !important;
+    z-index: 50 !important;
+}
+
+._current i {
+    z-index: 99 !important;
+}
+
+._current .cover {
+    display: none;
+}
+
+._current span {
+    display: none;
+}
+
+._right {
+    transform: translate3d(370px, 0px, -540px) rotateX(0deg) rotateY(-50deg) !important;
+    z-index: 5 !important;
+    opacity: 1 !important;
+}
+
+#guide  ._prev {
+    width: 28px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 530px;
+    z-index: 30;
+}
+
+#guide ._next {
+    width: 28px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 530px;
+    z-index: 30;
+}
+
+
+/*页面尾注部分*/
+#footer {
+    height: 220px;
+    background-color: black;
+}
+
+.copyright {
+    height: 48px;
+    padding-top: 40px;
+    color: #ccc;
+}
+.copyright a {
+    color: #ccc;
+}
+
+.center-block {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.game-163-link li {
+    float: left;
+}
+.game-163-link li:last-child {
+    margin-left: 15px;
+    margin-right: 18px;
+}
+
+.concat {
+    float: left;
+}
+.concat span {
+    float: left;
+}
+.concat span:before {
+    content: '-';
+    margin: 0 4px;
+}
+.concat span:first-child:before {
+    display: none;
+}
+.concat span:hover a {
+    text-decoration: underline;
+}
+
+.copyright-txt {
+    float: left;
+    padding-top: 14px;
+}
+
+.state {
+    padding-top: 5px;
+    line-height: 20px;
+    color: #ccc;
+}
+
+.state a {
+    color: #ccc;
+}

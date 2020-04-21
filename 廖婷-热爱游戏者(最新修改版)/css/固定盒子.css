@@ -1,0 +1,184 @@
+
+.section {
+    transition: width;
+}
+
+.box:hover .section {
+    transform: scale(0.8,0.8);
+}
+
+
+
+/*********************************************************/
+#fixedbox {
+    position: fixed;
+    width: 88%;
+    height: 80%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 70;
+    border: 3px solid gray;
+    opacity: 0.7;
+}
+
+#fixedbox a.logo{
+    width: 232px;
+    height: 58px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-indent: -300000px;
+}
+#fixedbox .tab {
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    right: 20px;
+    width: 870px;
+    height: 100px;
+    /*background-color: aqua;*/
+    padding-left: 20px;
+    /*background-color: rgba(0,0,0,.7);*/
+    /*transition: width .5s;*/
+    overflow: hidden;;
+
+}
+
+#fixedbox .tab ul {
+    position: absolute;
+    right: -670px;
+}
+
+#fixedbox .tab li {
+    float: left;
+    font-size: 16px;
+    width: 150px;
+    line-height: 100px;
+    background-color: rgba(0,0,0,.7);
+}
+
+#fixedbox .tab li a {
+    float: left;
+    margin-left: 30px;
+
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+#fixedbox .tab button {
+    position: absolute;;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    /*margin-right: 20px;*/
+    background: url(../images/btn-menu_08fd03e.png);
+}
+/*#fixedbox .tab button:hover{*/
+    /*background-position: -100px;*/
+/*}*/
+
+#fixedbox  a.arrow {
+    width: 63px;
+    height: 30px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.show {
+    position: absolute;
+    opacity: 1;
+    width: 800px;
+    height: 330px;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -328px;
+    /*border: 1px solid red;*/
+    /*width: 657px;*/
+    display: none;
+    top: 0;
+    opacity: 0;
+    /*height: 306px*/
+}
+.words1 {
+    position: absolute;
+}
+.txt-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: blur(0);
+    transition: all 2s 1s;
+    opacity: 1;
+
+}
+.txt-2{
+    position: absolute;
+    top: 35px;
+    left: 230px;
+}
+.txt-3 {
+    position: absolute;
+    top: 35px;
+    left: 215px;
+}
+.txt-4 {
+    position: absolute;
+    top: 185px;
+    left: 180px;
+}
+.txt-5 {
+    position: absolute;
+    top: 185px;
+    left: 196px;
+}
+
+.words2 {
+    width: 600px;
+    left: 35%;
+}
+.words2 .slogen {
+    width: 150px;
+    margin-left: 95px;
+    margin-top: 30px
+}
+.words3 {
+left: 60%;
+}
+.words3 .slogen {
+    width: 150px;
+    margin-left: 230px;
+    margin-top: 30px;
+}
+
+.words4 {
+    left: 67%;
+    top: 50%;
+}
+.words4 .slogen {
+    width: 150px;
+    margin-left: 260px;
+    margin-top: 30px
+}
+.words5 {
+    width: 300px;
+    left: 40%
+}
+.words5 .slogen {
+    width: 150px;
+    margin-left: 25px;
+    margin-top: 30px
+}
+.words6 {
+    width: 400px;
+    left: 40%;
+
+}
+.words6 .slogen {
+    width: 150px;
+    margin-left: 70px;
+    margin-top: 30px
+}
+

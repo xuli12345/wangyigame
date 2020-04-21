@@ -1,0 +1,547 @@
+
+/*header开始*/
+.header {
+
+}
+
+.nav {
+    height: 55px;
+}
+.bg {
+    position: relative;
+    height: 823px;
+    background: url('../images/bg1_a367199.jpg')  top center no-repeat;
+}
+ .logo {
+    display: block;
+    position: absolute;
+}
+.bg .welcome {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    /*background-color: plum;*/
+    right: 16px;
+    top: 24px;
+}
+.bg_con {
+    position: relative;
+    height: 823px;
+}
+.bg_con .logo {
+    right: 290px;
+    top: 72px;
+}
+.bg_con .download {
+    position: absolute;
+    width: 287px;
+    height: 147px;
+    /*background-color: #e95563;*/
+    right: 202px;
+    bottom: 210px;
+}
+.download .up {
+    width: 287px;
+    height: 108px;
+}
+.download .up_lef {
+    width: 108px;
+    height: 108px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.download .up_ri{
+    width: 170px;
+    height: 108px;
+    float: left;
+}
+.andrio {
+    display: block;
+    margin-bottom: 3px
+}
+
+.bg_con .video-btn {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 50%;
+    right: 4%;
+    margin: -52px 0 0 0;
+    cursor: pointer;
+    z-index: 999;
+}
+.circle {
+    background-image: url(https://zm.res.netease.com/pc/fab/20170525143950/img/spriter/index_z_e87e4d2.png);
+
+}
+/*header结束*/
+/*center开始*/
+.bg_center {
+    height: 957px;
+    background: url("../images/bg2_c11ac25.jpg") top center no-repeat;
+     text-align: center;
+    overflow: hidden;
+}
+.bg_center_con_tit {
+   margin-top: 70px;
+}
+.bg_center_con_fulist {
+    width: 1200px;
+    height: 600px;
+    /*background-color: paleturquoise;*/
+    margin-top: 80px;
+    /*position: relative;*/
+}
+/*.fuli {*/
+    /*position: absolute;*/
+    /*top:0px;*/
+/*}*/
+
+.bg_center_con_fulist li {
+    position: relative;
+    width: 222px;
+    height: 225px;
+    /*left: 16px;*/
+    /*bottom: 10px;*/
+    /*background-color: gold;*/
+    float: left;
+    margin: 32px 8px;
+}
+.bg_center_con_fulist a {
+    display: block;
+    width: 222px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+
+}
+.bg_center_con_fulist li img {
+    /*display: block;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg_center_con_fulist span {
+    display: block;
+    position: absolute;
+    top: 195px;
+    left: 70px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*center结束*/
+
+/*轮播图开始*/
+.lunbo {
+    height: 703px;
+    background: url("../images/bg3_31ed8d1.jpg") top center no-repeat;
+    text-align: center;
+    /*overflow: hidden;*/
+}
+.wrap {
+    width: 1200px;
+    /*margin: 100px auto;*/
+    margin-left: 50px;
+    /*border: 1px solid red;*/
+}
+.slide {
+    height: 500px;
+    position: relative;
+}
+.slide li {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+.slide li img {
+    width: 100%;  /*让图片的大小和父盒子一样的大，要不然会出问题，会撑出父盒子*/
+}
+.arrow {
+    /*display: none;*/
+}
+.prev,.next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    margin-top: -56px;
+    /*background-color: red;*/
+    /*background: url(images/prev.png) no-repeat;*/
+    z-index: 99;
+}
+.next {
+    right: 0;
+    /*background-image: url(images/next.png);*/
+}
+
+
+.slide .one {
+    width:400px;
+    top: 15px;
+    left: 80px;
+    opacity: 0.2;
+    z-index: 2
+}
+.slide .two {
+    width: 600px;
+    top: 40px;
+    left: 30px;
+    opacity: 0.8;
+    z-index: 3
+}
+.slide .three {
+    width: 800px;
+    top: 80px;
+    left: 230px;
+    opacity: 1;
+    z-index: 4
+}
+.slide .four {
+    width: 600px;
+    top: 40px;
+    left: 630px;
+    opacity: 0.8;
+    z-index: 3
+
+}
+.slide .five {
+    width:400px;
+    top: 15px;
+    /*left: 750px;*/
+    left: 780px;
+    opacity: 0.2;
+    z-index: 2
+
+}
+
+/*.slider{*/
+    /*position: relative;*/
+    /*width: 720px;*/
+    /*height: 406px;*/
+    /*overflow: hidden;*/
+    /*margin: 50px auto;*/
+    /*/!*background-color: plum;*!/*/
+/*}*/
+/*.lunbo .slide li {*/
+    /*position: absolute;*/
+    /*/!*left:120px;*!/*/
+    /*/!*top: 0;*!/*/
+
+    /*display: none;*/
+/*}*/
+/*.slider li:first-child {*/
+    /*display: block;*/
+/*}*/
+/*.arrow {*/
+    /*display: none;*/
+/*}*/
+
+/*.slider:hover .arrow {*/
+    /*display: block;*/
+/*}*/
+
+/*.arrow-left,*/
+/*.arrow-right {*/
+    /*font-family: "SimSun", "宋体";*/
+    /*width: 30px;*/
+    /*height: 60px;*/
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*margin-top: -30px;*/
+    /*cursor: pointer;*/
+    /*text-align: center;*/
+    /*line-height: 60px;*/
+    /*color: #fff;*/
+    /*font-weight: 700;*/
+    /*font-size: 30px;*/
+/*}*/
+
+/*.arrow-left:hover,*/
+/*.arrow-right:hover {*/
+    /*background-color: rgba(0, 0, 0, .5);*/
+/*}*/
+
+/*.arrow-left {*/
+    /*left: 0;*/
+/*}*/
+
+/*.arrow-right {*/
+    /*right: 0;*/
+/*}*/
+
+    /*轮播图结束*/
+/*七大职业开始*/
+.jobs {
+    position: relative;
+    height: 1013px;
+    background: url("../images/bg4_cfd2b6a.jpg") top center no-repeat;
+
+}
+.jobs_tit {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+}
+.jobs ul {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    margin-left: -450px;
+}
+.jobs ul li {
+    float: left;
+    margin-left: 47px;
+}
+.jobs ul a {
+    font-size: 20px;
+    color: #7aaed0;
+}
+.jobs ul a:hover {
+    font-weight: bold;
+
+}
+.jobs ul .line {
+    height: 20px;
+    width: 2px;
+    background-color: #c4c4c5;
+}
+.jobs_con_lef {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    margin-left: -511px;
+}
+.jobs_person {
+    position: absolute;
+    top:230px;
+    left: 50%;
+    margin-left: -220px;
+}
+.jobs_con_ri {
+    position: absolute;
+    width: 180px;
+    height: 232px;
+    top: 480px;
+    left: 50%;
+    margin-left: 340px;
+
+    /*background-color: paleturquoise;*/
+}
+.jobs_con_ri_add {
+    position: relative;
+    width: 180px;
+    height: 232px;
+    text-align: center;
+    /*background-color: palegoldenrod;*/
+}
+.jobs_con_ri_jobposi {
+    font-size: 24px;
+    display: block;
+    height: 32px;
+    width: 180px;
+    /*background-color: plum;*/
+    line-height: 32px;
+    color: #3e7bc6;
+}
+.bg_center_con_ri_img {
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+}
+.wenwan {
+    display: block;
+    position: absolute;
+    top: 100px;
+    font-size: 16px;
+  font-weight: bold;
+    left: 20px;
+    color: #3e7bc6;
+}
+.jobs_con_ri  p {
+    line-height: 54px;
+    display: block;
+    top:90px;
+    color: #767e85;
+}
+.jobs_con_ri_disri {
+    position: absolute;
+    display: block;
+    height: 113px;
+    width: 170px;
+    top: 150px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #767e85;
+}
+
+/*七大职业结束*/
+/*/!*footer开*/
+/*footter 开始*/
+.footer {
+    height: 256px;
+    background-color: #1a1a1a;
+}
+.nfooter {
+    position: relative;
+    top: 0;
+}
+.gongzonghao, .luntan, .kefu {
+    width: 190px;
+    height: 200px;
+    margin-top: 37px;
+    position: relative;
+    /*background-color: gold;*/
+}
+.gongzonghao {
+    float: left;
+}
+.luntan {
+    float: left;
+    margin-left: 312px;
+}
+.kefu {
+    float: right;
+}
+.i_contain {
+    position: relative;
+    width: 32px;
+    height: 180px;
+
+    /*background-color: palevioletred;*/
+}
+.i_contain p {
+    font-size: 20px;
+    color: white;
+    display: block;
+    position: absolute;
+    /*width: 32px;*/
+    /*height: 180px;*/
+    /*line-height: 90px;*/
+    /*text-align: center;*/
+    left: 10px;
+    top: 35px;
+    /*background-color: plum;*/
+
+}
+.gongzonghao_lef,
+.luntan_lef,
+.kefu_lef {
+    display: block;
+    position: absolute;
+    height: 132px;
+    width: 1px;
+    top: 0;
+    float: left;
+    background-color: #5f5f5f;
+}
+.gongzonghao_ri,
+.luntan_ri,
+.kefu_ri {
+    display: block;
+    position: absolute;
+    height: 132px;
+    width: 1px;
+    top: 20px;
+    float: left;
+    margin-left: 40px;
+    background-color: #5f5f5f;
+}
+.gongzonghao img,
+.luntan img,
+.kefu img{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.gongzonghao span,
+.luntan span,
+.kefu span {
+    display: block;
+    position: absolute;
+    left: 75px;
+    bottom: 50px;
+    color: #767575;
+
+}
+.gongzonghao a,
+.luntan a,
+.kefu a {
+    display: block;
+    position: absolute;
+    left: 75px;
+    bottom: 30px;
+    color: #c99a05;
+
+}
+.nfooter>img {
+    position: absolute;
+    top: -58px;
+    left: 50%;
+    margin-left: -102px;
+}
+.nfooter>img:hover {
+    opacity: 1;
+}
+/*footer 结束*/
+
+
+
+
+.copyright {
+    height: 107px;
+    padding-top: 40px;
+    background-color: #272a2c;
+    color: #fff;
+}
+.copyright a {
+    color: #fff;
+}
+
+.center-block {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.game-163-link li {
+    float: left;
+}
+.game-163-link li:last-child {
+    margin-left: 15px;
+    margin-right: 18px;
+}
+
+.concat {
+    float: left;
+}
+.concat span {
+    float: left;
+}
+.concat span:before {
+    content: '-';
+    margin: 0 4px;
+}
+.concat span:first-child:before {
+    display: none;
+}
+.concat span:hover a {
+    text-decoration: underline;
+}
+
+.copyright-txt {
+    float: left;
+    padding-top: 14px;
+}
+.copyright-txt a {
+    margin-left: 22px;
+}
+.copyright-txt a:hover {
+    text-decoration: underline;
+}
+
+.licence {
+    margin-top: 22px;
+    float: left;
+}

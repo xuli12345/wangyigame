@@ -1,0 +1,1010 @@
+/* 公共样式 */
+/* 头部游戏列表和底部游戏列表公共样式_开始 */
+.game-list .new-icon,
+.game-list .hot-icon {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background: url(../images/topbar_z_3563e40.png);
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.game-list .new-icon {
+  background-position: -56px -34px;
+}
+.game-list .hot-icon {
+  background-position: -56px -48px;
+}
+.game-list .pc-game, .game-list .mobile-game {
+  float: left;
+  overflow: hidden;
+}
+.game-list .pc-game:before, .game-list .mobile-game:before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background-color: #dd1136;
+  float: left;
+  margin-top: 17px;
+  margin-right: 36px;
+}
+.game-list .pc-game {
+  width: 406px;
+}
+.game-list .game-class {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.game-list .game-link {
+  line-height: 1;
+  overflow: hidden;
+  font-size: 14px;
+}
+.game-list .game-link dt {
+  line-height: 56px;
+  font-weight: 800;
+  padding-top: 8px;
+  padding-left: 4px;
+}
+.game-list .game-link dd {
+  line-height: 28px;
+}
+.game-list .game-link dd i {
+  margin-left: 6px;
+}
+.game-list .game-link dd a:hover {
+  font-weight: 800;
+}
+.game-list .role,
+.game-list .athletics,
+.game-list .hot-rec,
+.game-list .news-rec {
+  float: left;
+  overflow: hidden;
+}
+.game-list .role {
+  width: 262px;
+  height: 400px;
+}
+.game-list .role dl {
+  margin-right: -20px;
+}
+.game-list .role dd {
+  width: 137px;
+  float: left;
+}
+.game-list .athletics {
+  width: 108px;
+  padding-left: 35px;
+  height: 476px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+.game-list .hot-rec {
+  width: 140px;
+  padding-left: 35px;
+  height: 764px;
+}
+.game-list .news-rec {
+  padding-left: 35px;
+  width: 602px;
+  overflow: hidden;
+}
+.game-list .news-rec dl {
+  margin-right: -20px;
+}
+.game-list .news-rec dd {
+  width: 145px;
+  float: left;
+}
+/* 头部游戏列表和底部游戏列表公共样式_结束 */
+
+/* 版心开始 */
+.w {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+/* 版心结束*/
+/* 网页头部开始 */
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  line-height: 60px;
+  position: absolute;
+  top: 0px;
+  z-index: 101;
+}
+.header .w {
+  position: relative;
+}
+
+.header-nav li {
+  float: left;
+}
+.header-nav li:before {
+  content: "·";
+  color: #333;
+  float: left;
+  margin: 0 22px;
+}
+.header-nav .tag:before {
+  display: none;
+}
+.header-nav a {
+  font-size: 16px;
+  color: #818181;
+}
+.header-nav a:hover {
+  color: #cf0f32;
+}
+
+.logo {
+  float: left;
+  margin-left: 580px;
+}
+
+.logo h1 {
+  width: 177px;
+  height: 58px;
+}
+.logo a {
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/logo1_d853983.png);
+}
+
+.header .game-list {
+  position: absolute;
+}
+
+.header .dt {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #cf1132;
+  transition: all .3s;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+.header .dt span::selection {
+  background: transparent;
+}
+.header .dd {
+  width: 1260px;
+  height: 959px;
+  position: absolute;
+  background-color: #282b2d;
+  top: 62px;
+  overflow: hidden;
+  display: none;
+}
+.header .dd a {
+  color: #c3c3c3;
+}
+.header .dd a:hover {
+  color: #fff;
+}
+.header .game-icon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  background: url(../images/topbar_z_3563e40.png);
+  transform: scale(0.6);
+  top: 13px;
+  left: 23%;
+  margin-left: -17px;
+}
+.header .game-list-dt {
+  background-color: #282b2d;
+}
+.header .active-icon {
+  background-position-x: -34px;
+  left: 45%;
+}
+.header .game-desc {
+  float: right;
+  padding-right: 10px;
+}
+.header .game-desc span {
+  margin-right: 30px;
+}
+.header .game-desc i {
+  margin-right: 4px;
+}
+.header .game-list-header {
+  line-height: 68px;
+  padding-top: 18px;
+  color: #fff;
+}
+.header .game-list-header h3 {
+  float: left;
+  padding-left: 64px;
+  font-size: 20px;
+}
+.header .game-link,
+.header .game-class {
+  padding-left: 40px;
+}
+.header .game-class {
+  background-color: #35373a;
+  color: #dd1136;
+}
+.header .game-link dt {
+  color: #6b6b6c;
+}
+.header .role,
+.header .athletics,
+.header .hot-rec {
+  border-right: 1px solid #454545;
+}
+.header .pack-up {
+  width: 56px;
+  height: 14px;
+  background: url(../images/topbar_z_3563e40.png) 0 -34px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -28px;
+  bottom: 15px;
+  cursor: pointer;
+}
+.header .pack-up:hover {
+  background-position-y: -48px;
+}
+
+/* 网页头部结束 */
+
+/* 首页开始 */
+.main{
+  height: 930px;
+  background: url(../images/banner_20ccee3.jpg) center;
+  margin-top: 61px;
+}
+
+.leftgo li{
+  float: left;
+  margin-top: 25px;
+}
+
+.goiner img{
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.centergo img{
+  margin-top: 110px;
+  margin-left: -140px;
+}
+
+.spbo {
+    float: left;
+    margin-left: 380px;
+    background: #000;
+    height: 105px;
+    width: 200px;
+    margin-top: 25px;
+}
+
+.spbo i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://koh.res.netease.com/pc/gw/20181114183546/img/btn-video-c_61a3ce1.png) no-repeat;
+    animation: video_rotate 3.4s linear infinite;
+}
+
+.spbo span{
+    float: left;
+    width: 50px;
+    height: 58px;
+    background: url(https://koh.res.netease.com/pc/gw/20181114183546/img/btn-video-r_34caaeb.png) no-repeat 60% 50%;
+    margin-left: 35%;
+    margin-top: 25px;
+}
+
+.shade {
+  width: 100%;
+  height: 100%;  
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  top: 0;
+  z-index: 100;
+}
+
+.spbo video {
+  width: 800px;
+  height: 400px;
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 300px;
+  z-index: 101;
+}
+
+.palysp a {
+    position: fixed;
+    top: 80px;
+    left: 74%;
+    z-index: 101;
+    display: none;
+    font-size: 80px;
+    color: #fff;
+    transition: .5s;
+}
+
+.palysp a:hover {
+  transform: rotateZ(360deg)
+}
+
+.erwei img{
+  width: 105px;
+  height: 105px;
+  float: left;
+  margin-left: 215px;
+  margin-top: -83px;
+}
+
+.buttons {
+  width: 170px;
+  height: 105px;
+  float: left;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+.buttons a {
+  width: 170px;
+  height: 50px;
+}
+
+.buttons img{
+  float: left;
+  margin-top: 5px;
+}
+
+.buttons a:hover {
+  background-color: #ffffff;
+}
+
+.buttons1 {
+  width: 350px;
+  height: 50px;
+  float: left;
+  margin-left: 450px;
+  margin-top: 20px;
+}
+
+.yuyue {
+  float: left;
+  margin-left: 190px;
+  margin-top: -50px;
+}
+
+.news{
+  height: 350px;
+}
+
+.news ul {
+  width: 600px;
+  height: 280px;
+  float: left;
+  margin-top: 10px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+.news img {
+  float: left;
+}
+
+
+.news span {
+  float: left;
+}
+
+.newbg {
+  background-color: rgba(65, 57, 55, 0.9);
+  position: relative;
+  left: -30px;
+  z-index: 100;
+}
+
+.biaoti {
+  width: 515px;
+  height: 50px;
+  border-bottom: 1px solid#888280;
+  margin-left: 40px;
+}
+
+.biaoti2{
+  display: block;
+  width: 70px;
+  height: 48px;
+  font-size: 16px;
+  font:bold;
+  text-align: center;
+  line-height: 60px;
+  float: left;
+  color:#e7ddca;
+}
+
+.biaoti1{
+  display: block;
+  width: 70px;
+  height: 48px;
+  font-size: 16px;
+  font:bold;
+  text-align: center;
+  line-height: 60px;
+  float: left;
+  color: #e7ddca;
+}
+
+.biaoti a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.tuiguang a{
+  font-size: 20px;
+  font:bold;
+  color: #fff;
+  float: left;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.tuijian{
+  font-size: 14px;
+  font: bold;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.tuijian1{
+  display: block;
+  width: 50px;
+  height: 25px;
+  color: #fff;
+  background-color: #8d271c;
+  float: left;
+  text-align: center;
+  line-height: 25px;
+}
+
+.tuijian2{
+  display: block;
+  width: 430px;
+  height: 25px;
+  color: #fff;
+  background-color: #382f29;
+  float: left;
+  line-height: 25px;
+  padding-left: 25px;
+}
+
+.tubiao{
+  font-size: 14px;
+  line-height: 30px;
+  margin-left: 45px;
+  position: relative;
+  top: 10px;
+}
+
+.tubiao a {
+  color:#888280;
+}
+
+.tubiao a:hover {
+  color: #e7ddca;
+}
+
+.tubiao i {
+  float: right;
+  margin-right: 45px;
+}
+/* 首页的结束 */
+
+
+/* 视频板块的开始 */
+.video {
+  height: 1050px;
+  background: url(../images/part01-bg_6848831.jpg) no-repeat center top;
+  position: relative;
+}
+
+.spcen {
+  text-align: center;
+}
+
+.kuang ul{
+  float: left;
+} 
+
+.kuang1 li{
+  float: left;
+    width: 420px;
+    height: 274px;
+    margin: 0 22px 18px 0;
+    overflow: hidden;
+    margin-left: -120px;
+}
+
+.kuang1 img {
+  width: 100%;
+  transition: all .2s;
+}
+
+.kuang1 span {
+    width: 420px;
+    height: 274px;
+    background: rgba(0,0,0,.6) url(https://koh.res.netease.com/pc/gw/20181114183546/img/video-kuang_4698c18.png) no-repeat center center;
+    background-size: 94% auto;
+    position: absolute;
+    top: 167px;
+    left: 728px;
+}
+
+.kuang1:hover img {
+  transform: scale(1.5);
+}
+
+.kuang1 video {
+  width: 800px;
+  height: 400px;
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 300px;
+  z-index: 101;
+}
+
+.kuang1sp a {
+  position: fixed;
+  top: 80px;
+  left: 74%;
+  z-index: 101;
+  display: none;
+  font-size: 80px;
+  color: #fff;
+  transition: .5s;
+}
+
+.kuang1sp a:hover {
+transform: rotateZ(360deg)
+}
+
+.kuang2 li{
+  float: left;
+    width: 320px;
+    height: 208px;
+    margin: 0 22px 18px 0;
+    overflow: hidden;
+    margin-top: 65px;
+}
+
+.kuang2 img {
+  width: 100%;
+  transition: all .2s;
+}
+
+.kuang2 span {
+    width: 320px;
+    height: 208px;
+    background: rgba(0,0,0,.6) url(https://koh.res.netease.com/pc/gw/20181114183546/img/video-kuang_4698c18.png) no-repeat center center;
+    background-size: 94% auto;
+    position: absolute;
+    top: 231px;
+    left: 1170px;
+}
+
+.kuang2:hover img {
+  transform: scale(1.5);
+}
+
+.kuang2 video {
+  width: 800px;
+  height: 400px;
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 300px;
+  z-index: 101;
+}
+
+.kuang3 li{
+  float: left;
+    width: 320px;
+    height: 208px;
+    margin: 0 22px 18px 0;
+    overflow: hidden;
+    margin-top: 298px;
+    margin-left: -785px;
+}
+
+.kuang3 img {
+  width: 100%;
+  transition: all .2s;
+}
+
+.kuang3 span {
+    width: 320px;
+    height: 208px;
+    background: rgba(0,0,0,.6) url(https://koh.res.netease.com/pc/gw/20181114183546/img/video-kuang_4698c18.png) no-repeat center center;
+    background-size: 94% auto;
+    position: absolute;
+    top: 464px;
+    left: 727px;
+}
+
+.kuang3:hover img {
+  transform: scale(1.5);
+}
+
+.kuang3 video {
+  width: 800px;
+  height: 400px;
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 300px;
+  z-index: 101;
+}
+
+.kuang4 li{
+  float: left;
+    width: 420px;
+    height: 274px;
+    overflow: hidden;
+    margin-left: 222px;
+    margin-top: -226px;
+}
+
+.kuang4 img {
+  width: 100%;
+  transition: all .2s;
+}
+
+.kuang4 span {
+    width: 420px;
+    height: 274px;
+    background: rgba(0,0,0,.6) url(https://koh.res.netease.com/pc/gw/20181114183546/img/video-kuang_4698c18.png) no-repeat center center;
+    background-size: 94% auto;
+    position: absolute;
+    top: 464px;
+    left: 1070px;
+}
+
+.kuang4:hover img {
+  transform: scale(1.5);
+}
+
+.kuang4 video {
+  width: 800px;
+  height: 400px;
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 300px;
+  z-index: 101;
+}
+
+.kuang4sp a {
+  position: fixed;
+  top: 80px;
+  left: 74%;
+  z-index: 101;
+  display: none;
+  font-size: 80px;
+  color: #fff;
+  transition: .5s;
+}
+
+.kuang4sp a:hover {
+transform: rotateZ(360deg)
+}
+
+
+/* 视频板块的结束 */
+
+
+/* 特色板块的开始 */
+.feature {
+  height: 954px;
+  background: url(https://koh.res.netease.com/pc/gw/20181114183546/img/part02-bg_2674f45.jpg) no-repeat center top;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.tabimg {
+  text-align: center;
+}
+
+.shibing {
+  float: right;
+  margin-top: -400px;
+}
+
+.feature-swiper {
+  width: 1206px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  top: -700px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.feature-swiper .swiper-slide {
+  text-align: center;
+}
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  background: url(../images/btn-prev_ed1fc31.png) no-repeat;
+  background-size: 100%;
+}
+
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  background: url(../images/btn-next_bced41c.png) no-repeat;
+  background-size: 100%;
+}
+
+ .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  z-index: 10;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  z-index: 10;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+
+.swiper-pagination {
+  bottom: 0;
+  text-align: center;
+  margin-left: 450px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  z-index: 10;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin: 0 18px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: url(https://koh.res.netease.com/pc/gw/20181114183546/img/feature-dot_09279a8.png) no-repeat;
+}
+.swiper-pagination .swiper-pagination-bullet:nth-child(1) {
+  background: red;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  z-index: 10;
+}
+/* 特色板块的结束 */
+
+/* 武器板块的开始 */
+.jian {
+  height: 1022px;
+  position: relative;
+  background: url(../images/part03-bg_9a58177.jpg) no-repeat center top;
+  overflow: hidden;
+}
+
+
+
+.tit {
+  text-align: center;
+}
+
+.wuqilunbo {
+  width: 480px;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  left: 150px;
+  top: 100px;
+}
+
+
+.jianjie {
+  float: right;
+  width: 575px;
+  height: 430px;
+  margin-top: -380px;
+  z-index: 101;
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: 100px;
+}
+
+.jianjie h4 {
+  background: url(https://koh.res.netease.com/pc/gw/20181114183546/img/weapon/bs_4b37cc7.png) no-repeat center;
+}
+
+.jianjie li {
+  float: left;
+  margin-top: 15px;
+}
+
+.map {
+  height: 1140px;
+    background: url(../images/part04-bg_230ed6d.jpg) no-repeat center top;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.maptit {
+  text-align: center;
+}
+
+.maptap {
+  text-align: center;
+  margin-top: 100px;
+}
+.jianjie img {
+  float: left;
+  padding-right: 30px;
+}
+/* 武器板块的结束 */
+/* 网页底部开始 */
+.copyright {
+  height: 107px;
+  padding-top: 40px;
+  background-color: #272a2c;
+  color: #fff;
+}
+.copyright a {
+  color: #fff;
+}
+
+.center-block {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.game-163-link li {
+  float: left;
+}
+.game-163-link li:last-child {
+  margin-left: 15px;
+  margin-right: 18px;
+}
+
+.concat {
+  float: left;
+}
+.concat span {
+  float: left;
+}
+.concat span:before {
+  content: '-';
+  margin: 0 4px;
+}
+.concat span:first-child:before {
+  display: none;
+}
+.concat span:hover a {
+  text-decoration: underline;
+}
+
+.copyright-txt {
+  float: left;
+  padding-top: 14px;
+}
+.copyright-txt a {
+  margin-left: 22px;
+}
+.copyright-txt a:hover {
+  text-decoration: underline;
+}
+
+.licence {
+  margin-top: 22px;
+  float: left;
+}
+
+/* 网页底部结束 */
+
+/*# sourceMappingURL=index.css.map */

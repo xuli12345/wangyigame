@@ -1,0 +1,451 @@
+
+/*.zhuLei-body开始*/
+.zhuLei-body {
+    height: 1000px;
+    background: url("../images/bg1_b992c12.jpg") no-repeat center center;
+    position: relative;
+    overflow: hidden;
+}
+.zhuLei-friendLink ul {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: 170px;
+    text-align: center;
+    line-height: 28px;
+}
+.zhuLei-friendLink li {
+    float: left;
+    margin-right: 16px;
+}
+.zhuLei-friendLink li .zhulei-body-a1 {
+    display: inline-block;
+    height: 40px;
+    position: relative;
+}
+.zhuLei-friendLink li:nth-child(1)>a{
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: underline;
+    color: #beb7ba;
+}
+.zhuLei-friendLink li:nth-child(1)>a:hover{
+    color: #e8db85 ;
+}
+
+.zhuLei-friendLink li:nth-child(1),
+.zhuLei-friendLink li:nth-child(4) {
+    margin-right: 30px;
+}
+.zhuLei-friendLink li:nth-child(5){
+    margin-right: 14px;
+    font-size: 20px;
+    color: #b09194;
+    line-height: 28px;
+}
+.zhuLei-friendLink li:last-child .zhulei-body-s1{
+    display: block;
+    width:20px;
+    height: 24px;
+    background:  url("../images/top_bar_z_e69a78b.png") no-repeat -167px -24px;
+    opacity: .6;
+    margin-top: 6px;
+    position: relative;
+}
+.zhuLei-friendLink li:last-child .zhulei-body-s1 .zhulei-body-i1 {
+    display: block;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+}
+/*添加样式盒子1*/
+.zlAdd1 {
+    position: absolute;
+    width: 140px;
+    height: 176px;
+    background: url("../images/qq_code_bg_e7fb123.png") ;
+    background-size: 140px 176px;
+    text-align: center;
+    top:28px;
+    left: -50px;
+    display: none;
+}
+.zlAdd1 img {
+    width: 110px;
+    height: 110px;
+    margin-top: 22px;
+}
+.zlAdd1 span {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+}
+.zlAdd1 span:last-child{
+    color: #e8db85;
+}
+/*添加样式盒子2*/
+.zlAdd2 {
+    width: 160px;
+    height: 25px;
+    background-color: rgba(255,255,255,.3);
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    top: 30px;
+    left: -124px;
+    display: none;
+    /*background: url("../images/qq_ico1_01820ec.png");*/
+}
+.zlAdd2 a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background:  url("../images/icon.v5.png") no-repeat;
+    margin-top: 2px;
+}
+.zlAdd2 a:nth-child(2) {
+    background: url("../images/icon.v5.png") no-repeat 0 -25px;
+}
+.zlAdd2 a:nth-child(3) {
+    background: url("../images/icon.v5.png") no-repeat 0 -300px;
+}
+.zlAdd2 a:nth-child(4) {
+    background: url("../images/icon.v5.png") no-repeat 0 -350px;
+}
+.zlAdd2 a:nth-child(5) {
+    background: url("../images/icon.v5.png") no-repeat 0 -375px;
+    position: relative;
+}
+.zlAdd2 a:nth-child(2),
+.zlAdd2 a:nth-child(4){
+    margin-left:8px ;
+    margin-right:8px ;
+}
+
+
+/*.zhuLei-body结束*/
+/*zhuLei-main开始*/
+.zhuLei-main {
+    position: absolute;
+    width: 524px;
+    height: 136px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.zhuLei-main a {
+    position: absolute;
+
+}
+.zhuLei-main a:nth-child(1){
+    top:2px;
+    position: relative;
+}
+.zhuLei-main a:nth-child(2){
+    left:112px;
+    top:10px;
+}
+.zhuLei-main a:nth-child(3){
+   left:112px;
+    top:70px;
+}
+.zhuLei-main a:nth-child(4){
+    left:294px;
+    bottom: 10px;
+}
+
+.zhuLei-main a:nth-child(5){
+    left:410px;
+    top : 6px;
+}
+.zhuLei-main a:nth-child(5) .zhuLei-main-saoMa{
+    width: 90px;
+    height: 88px;
+    position: absolute;
+    display: block;
+    top:10px;
+    left: 12px;
+}
+.zhuLei-main a:nth-child(5) span{
+    position: absolute;
+    width: 90px;
+    /*height: 12px;*/
+    top: 102px;
+    left: 16px;
+    font-size: 12px;
+    color: black;
+}
+/*添加3*/
+@keyframes pingyi{
+   0% {top:10px}
+   50% {top:96px}
+   100% {top:10px}
+}
+.zhuLei-main a:nth-child(5) i{
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px red;
+    animation: pingyi 3s infinite linear;
+    
+}
+
+    /*添加2*/
+.zlAdd3{
+    display: block;
+    width: 196px;
+    height: 207px;
+    background: url("../images/hover_tf_7afe694.png") center center;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    background-size: 100%;
+    /*background-color: transparent;*/
+    display: none;
+}
+
+.zlAdd3 .wx_1ef {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 40px auto 0 auto;
+}
+
+
+/*zhuLei-main结束*/
+/*zhuLei-foot开始*/
+.zhuLei-foot{
+    position: absolute;
+    width: 800px;
+    height: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+
+}
+.zhuLei-foot-top{
+    color: #fff;
+    height: 40px;
+    margin-bottom: 26px;
+}
+.zhuLei-foot-top a img{
+    height: 30px;
+}
+.zhuLei-foot-top-a1,
+.zhuLei-foot-top-a2{
+    float: left;
+    margin-top: 5px;
+}
+.zhuLei-foot-top-a1{
+    margin-right: 16px;
+}
+.zhuLei-foot-top-a2 {
+    margin-right: 52px;
+}
+.zhuLei-foot-top-p{
+    float: left;
+}
+.zhuLei-foot-top-p1 {
+    width: 412px;
+    margin-bottom: 14px;
+}
+.zhuLei-foot-top-p1 a {
+    color: #fff;
+}
+.zhuLei-foot-top-p1 a:hover,
+.zhuLei-foot-top-p2 a:hover {
+    text-decoration: underline;
+}
+.zhuLei-foot-top-p2 a {
+    margin-left: 20px;
+    color: #fff;
+}
+.zhuLei-foot-bottom-p{
+    color: #fff;
+    margin-bottom: 12px;
+}
+/*zhuLei-foot结束*/
+/*.zhuLei-copyright开始*/
+.zhuLei-copyright{
+    width: 100px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+.zhuLei-copyright span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.zhuLei-copyright span:hover{
+    color: #e8db85;
+}
+.zlShow{
+    display: block;
+}
+
+.zhuLei-copyright i {
+    display: inline-block;
+    width: 23px;
+    height: 9px;
+    background:url("../images/bq_ffec2de.png") no-repeat center center;
+    margin-left: 26px;
+}
+/*.zhuLei-copyright结束*/
+/*zhuLei-news开始*/
+.zhuLei-news {
+    position: fixed;
+    right: 0;
+    top: 220px;
+    cursor: pointer;
+    width: 0;
+    overflow: hidden;
+    /*display: none;*/
+}
+/*zhuLei-news结束*/
+/*.zhuLei-newsCenter开始*/
+.zhuLei-newsCenter{
+    width: 345px;
+    height: 339px;
+    position: fixed;
+    right: 0;
+    top: 122px;
+    background: url("../images/news_bg2_c95b48e.png") no-repeat center center;
+    background-size: 345px 100%;
+    overflow: hidden;
+    /*background-size: auto 完全显示图片实际大小 cover 图片被缩放至刚好能最大显示图片，隐藏的最少 contain 能完全显示背景图片;*/
+}
+    /*能用定位的尽量用定位，如果浮动简单的就用浮动*/
+.zhuLei-newsCenter-top,
+.zhuLei-newsCenter-middle,
+.zhuLei-newsCenter-bottom {
+    margin: 0 auto;
+    height:78px;
+    width: 318px;
+    position: relative;
+}
+.zhuLei-newsCenter-top img{
+    position: absolute;
+    top: 40px;
+    left: 6px;
+}
+.zhuLei-newsCenter-top span {
+    position: absolute;
+    top: 38px;
+    left: 30px;
+    font-size: 26px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 600;
+}
+.zhuLei-newsCenter-top a {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #935f69;
+}
+.zhuLei-newsCenter-top a:hover{
+    color: #e8db85;
+}
+    /*.newsCenterColor{*/
+    /*color: #e8db85;*/
+/*}*/
+/*.zhuLei-newsCenter-top a:hover{*/
+    /*color: #e8db85;*/
+/*}*/
+.zhuLei-newsCenter-middle{
+    height: 44px;
+    border-bottom: 1px solid #717280;
+    line-height: 44px;
+}
+.zhuLei-newsCenter-middle a {
+    font-size: 18px;
+    line-height: 18px;
+    color: #975f72;
+    font-weight: 600;
+}
+.zhuLei-newsCenter-middle a:nth-child(1) {
+    margin: 0 46px 0 20px;
+    color: #e8db85;
+}
+.zhuLei-newsCenter-middle a:nth-child(3){
+    margin-left: 118px;
+    font-weight: 400;
+}
+
+/*.zhuLei-newsCenter-middle a:nth-child(3):hover{*/
+    /*color: #e8db85;*/
+/*}*/
+/*.zhuLei-newsCenter结束*/
+.zhuLei-newsCenter-bottom {
+    width: 318px;
+    height: 190px;
+    overflow: hidden;
+}
+.zhuLei-newsCenter-bottom ul li {
+    width: 318px;
+    height: 40px;
+    border-bottom: 1px dashed #717280;
+    color: #717280;
+    font-size: 14px;
+}
+.zhuLei-newsCenter-bottom ul li span {
+    display: inline-block;
+    width: 250px;
+    padding-top: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin-left: 2px;
+    margin-right: 8px;
+    vertical-align: bottom;
+    color: #fff;
+}
+.zhuLei-newsCenter-bottom ul li span:hover{
+    color: #e8db85;
+    cursor: pointer;
+}
+.zhuLei-newsCenter-bottom-ulb{
+    position: absolute;
+    width: 679px;
+    height: 164px;
+}
+.zhuLei-newsCenter-bottom-ulb ul{
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+/*zhuLei-newsCenter-bottom结束*/
+/*zhuLei-lvyin-logo开始*/
+.zhuLei-lvyin-logo {
+    width: 274px;
+    height: 70px;
+    position: absolute;
+    top: 102px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.zhuLei-lvyin-logo a {
+    display: block;
+    width: 274px;
+    height: 70px;
+    text-indent: -999999px;
+    background: url("../images/logo1_22bd281.png");
+}
+
+/*zhuLei-lvyin-logo结束*/

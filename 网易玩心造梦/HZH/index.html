@@ -1,0 +1,859 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="" content="">
+  <meta http-equiv="" content="">
+  <title>玩心造梦</title>
+  <!-- 清除样式 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 公共样式 -->
+  <link rel="stylesheet" href="css/public.css">
+  <!-- 首页css -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <link type="text/css" href="css/style.css" rel="stylesheet" />
+  <link rel='stylesheet' href='css/gamestyle.css' type='text/css'/>
+  <link rel="shortcut icon" href="js/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- 网页头部开始 -->
+  <div class="header">
+    <div class="w">
+      <div class="logo">
+        <h1><a href="../../index.html">网易游戏</a></h1>
+      </div>
+      <div class="header-nav">
+        <ul>
+          <li class="tag"><a href="javascript:void(0);">网易游戏会员俱乐部</a></li>
+          <li><a href="javascript:void(0);">关于网易游戏</a></li>
+          <li><a href="javascript:void(0);">爱玩网</a></li>
+          <li><a href="javascript:void(0);">游戏热爱者</a></li>
+          <li><a href="javascript:void(0);">网易大神</a></li>
+          <li><a href="javascript:void(0);">人才招聘</a></li>
+          <li><a href="javascript:void(0);">客服中心</a></li>
+        </ul>
+      </div>
+      <div class="game-list">
+        <div class="dt" id="game_list_dt"><i class="game-icon" id="game_icon"></i><span id="game_list_title">游戏列表</span></div>
+        <div class="dd" id="game_list_dd">
+          <div class="game-list-header clearfix">
+            <h3>游戏列表</h3>
+            <div class="game-desc">
+              <span><i class="new-icon"></i>最新游戏</span>
+              <span><i class="hot-icon"></i>热门游戏</span>
+            </div>
+          </div>
+          <div class="game-class">
+            <div class="pc-game">客户端游戏</div>
+            <div class="mobile-game">手机游戏</div>
+          </div>
+          <div class="game-link">
+            <div class="role">
+              <dl>
+                <dt>角色扮演</dt>
+               <dd><a href="javascript:void(0);">梦幻西游电脑版<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">大话2经典版<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">天下3<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">新倩女幽魂<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">逆水寒<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">天谕<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">龙魂时刻<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">泰亚史诗<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">大话2免费版<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);"> 新大话3经典版<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">新大话3免费版<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">镇魔曲<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">镇魔曲页<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">游大唐无双<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">武魂2<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">魔兽世界<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">暗黑破坏神3<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">新飞飞<i class="new-icon"></i></a></dd>
+               <dd><a href="javascript:void(0);">精灵传说<i class="new-icon"></i></a></dd>
+              </dl>
+            </div>
+            <div class="athletics">
+              <dl>
+                <dt>竞技/休闲</dt>
+                <dd><a href="javascript:void(0);">我的世界<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">守望先锋<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">荒野行动Plus<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">EVE Online<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">突击英雄<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽战区<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战意<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘境对决<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">风暴英雄<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">星际争霸Ⅱ<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">英雄三国<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">炉石传说<i class="new-icon"></i></a></dd>
+              </dl>
+            </div>
+            <div class="hot-rec">
+              <dl>  
+                <dt>热门推荐</dt>
+                <dd><a href="javascript:void(0);">梦幻西游手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">大话西游手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">倩女幽魂手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">阴阳师</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">决战！平安京</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">荒野行动</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">第五人格</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">神都夜行录</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">楚留香</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">率土之滨</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">天下手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">镇魔曲手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">非人学园</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">大唐无双唯美篇</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">光明大陆</a><i class="new-icon"></i></dd>
+              </dl>
+            </div>
+            <div class="news-rec">
+              <dl>
+                <dt>竞新品推荐</dt>
+                <dd><a href="javascript:void(0);">梦幻西游3D<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">暗黑破坏神：不朽<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无限战车<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">我的世界Minecraft<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猎手之王<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">花与剑<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">Sky光遇<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">流星蝴蝶剑<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">一起优诺<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况足球<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">终结者2官方手游<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">孤岛先锋<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">逗斗火柴人<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">舰无虚发：暗星<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">明日之后<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况：王者集结<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">绘真·妙笔千山<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战舰世界闪击战<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">坦克世界闪击战<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战争怒吼<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">权力与纷争<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">极客战记<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天启联盟<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">轩辕剑龙舞云山<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">泰坦黎明<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战国志<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">星战前夜：无烬星河<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">三国如龙传<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">边境之旅<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">网易棋牌<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">神谕文明<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">悠梦YuME<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">永远的7日之都<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">风暴对决<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猎魂觉醒<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">游戏王：决斗链接<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天谕手游<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">迷室The Room<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">绿茵之巅<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">海岛纪元<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">汉王纷争<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">泡泡趴<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">叛逆性百万亚瑟王<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">狼人杀<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魔法禁书目录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">梦幻西游无双<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魂之轨迹<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘境对决<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">九州海上牧云记<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">影之诗<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">暴走小飞机<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猪场怼怼乐<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">潮人篮球<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘宝猎人:王牌猎手<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">三国诛将录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">重装突击<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">劲舞团<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">坦克连<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大话西游热血版<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大航海之路<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">超物理基斗<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">三少爷的剑<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">迷雾世界萌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">王EX<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">飞刀又见飞刀<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘宝猎人<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">伏魔咒<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天下X天下<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">异次元战姬<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">永恒边境<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽神域<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">斩魂手游版<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">格罗亚传奇<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">雨血：影之刃<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">花语月<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">乱斗西游2<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">惊梦<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">火拼萌萌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">消超能动物联盟<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">口袋侏罗纪<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">迷你西游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">主公莫慌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况俱乐部<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大富翁9<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">功夫熊猫3手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">倩女幽魂录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魂之幻影<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大唐游仙记<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天下HD<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽战区·觉醒<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">荆棘王座<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">西游神魔决<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">有杀气童话<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">小汪汪<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">小时代官方游戏<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">妖刀少女异闻录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猫和老鼠官方手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">功夫熊猫官方手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">初音速<i class="hot-icon"></i></a></dd>
+              </dl>
+            </div>
+          </div>
+          <i class="pack-up" id="pack_up"></i>
+        </div>
+      </div>     
+    </div>
+  </div>
+  <!-- 网页头部结束 -->
+
+  <!--中间背景图的开始-->
+  <div class="wxzmbg ">
+    <div class="bg">
+      <img src="images/SBBG.png" alt="">
+    </div>
+
+  </div>
+  <!--中间背景图的结束-->
+
+  <!--中间红色条开始-->
+  <div class="fenge">
+
+  </div>
+  <!--中间红色条结束-->
+
+  <!--新闻资讯的开始-->
+  <div class="news w">
+    <div class="newshead"></div>
+    <div class="newspic">
+      <img data-original="images/xbg.jpg" alt="">
+      <!--"images/xbg.jpg"-->
+    </div>
+    <div class="newstext">
+      <a class="newslist1" href="javascript:void(0);">
+        <span class="yuan1"></span>
+        <span class="newstit1">决战！ChinaJoy 《决战！平安京》CJ精彩…</span>
+        <i class="newstime1">08-07</i>
+        <p class="newsdes1">备受瞩目的2018ChinaJoy于8月3日盛大开幕，《决战!平安京》携诸多惊喜亮相，“平安庆典”系列皮肤现世集结、“逐月照君”妖狐热舞时刻、平安京小剧场首次登场，更有现场全</p>
+      </a>
+
+      <a class="newslist2" href="javascript:void(0);" >
+        <span class="yuan2"></span>
+        <span class="newstit2">决战！ChinaJoy 《决战！平安京》CJ精彩…</span>
+        <i class="newstime2">08-07</i>
+        <p class="newsdes2">备受瞩目的2018ChinaJoy于8月3日盛大开幕，《决战!平安京》携诸多惊喜亮相，“平安庆典”系列皮肤现世集结、“逐月照君”妖狐热舞时刻、平安京小剧场首次登场，更有现场全</p>
+      </a>
+
+      <a class="newslist3" href="javascript:void(0);" >
+        <span class="yuan3"></span>
+        <span class="newstit3">决战！ChinaJoy 《决战！平安京》CJ精彩…</span>
+        <i class="newstime3">08-07</i>
+        <p class="newsdes3">备受瞩目的2018ChinaJoy于8月3日盛大开幕，《决战!平安京》携诸多惊喜亮相，“平安庆典”系列皮肤现世集结、“逐月照君”妖狐热舞时刻、平安京小剧场首次登场，更有现场全</p>
+      </a>
+
+      <a class="newslist4" href="javascript:void(0);" >
+        <span class="yuan4"></span>
+        <span class="newstit4">决战！ChinaJoy 《决战！平安京》CJ精彩…</span>
+        <i class="newstime4">08-07</i>
+        <p class="newsdes4">备受瞩目的2018ChinaJoy于8月3日盛大开幕，《决战!平安京》携诸多惊喜亮相，“平安庆典”系列皮肤现世集结、“逐月照君”妖狐热舞时刻、平安京小剧场首次登场，更有现场全</p>
+      </a>
+    </div>
+  </div>
+  <!--新闻资讯的结束-->
+
+  <!--轮播图前面的show gril开始-->
+<div class="showGril">
+
+</div>
+  <!--轮播图前面的show gril结束-->
+
+  <!--轮播图的开始-->
+  <div class="show">
+    <div id="hero-slides">
+      <div id="header">
+        <div id="logo"></div>
+        <div id="menu">
+          <div id="hamburger">
+            <div class="slice"></div>
+            <div class="slice"></div>
+            <div class="slice"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="slides-cont">
+        <div class="button" id="next"></div>
+        <div class="button" id="prev"></div>
+        <div id="slides">
+          <div class="slide" style="background-image: url(images/g1.jpg);">
+            <div class="number">01</div>
+            <div class="body">
+              <div class="location">静静</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g2.jpg);">
+            <div class="number">02</div>
+            <div class="body">
+              <div class="location">琴琴</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g3.jpg);">
+            <div class="number">03</div>
+            <div class="body">
+              <div class="location">芹芹</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g4.jpg);">
+            <div class="number">04</div>
+            <div class="body">
+              <div class="location">勤勤</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g5.jpg);">
+            <div class="number">05</div>
+            <div class="body">
+              <div class="location">ლ(°◕‵ƹ′◕ლ)</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g6.jpg);">
+            <div class="number">06</div>
+            <div class="body">
+              <div class="location">QAQ</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g7.jpg);">
+            <div class="number">07</div>
+            <div class="body">
+              <div class="location">w(ﾟДﾟ)w</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g8.jpg);">
+            <div class="number">08</div>
+            <div class="body">
+              <div class="location">(╥╯^╰╥)</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g9.jpg);">
+            <div class="number">09</div>
+            <div class="body">
+              <div class="location">嘤嘤嘤</div>
+              <div class="headline">芳龄18</div><a href="javascript:void(0);">
+              <div class="link">查看详情</div></a>
+            </div>
+          </div>
+          <div class="slide" style="background-image: url(images/g10.jpg);">
+            <div class="number">10</div>
+            <div class="body">
+              <div class="location">嘤嘤嘤</div>
+              <div class="headline">点击查看更多哟</div><a href="javascript:void(0);">
+              <div class="link">查看更多</div></a>
+            </div>
+          </div>
+        </div>
+        <div id="next-catch"></div>
+        <div id="prev-catch"></div>
+      </div>
+
+    </div>
+  </div>
+  <!--轮播图的结束-->
+
+  <!--游戏展示的开始-->
+  <div class="gamebgc ">
+    <div class="game">
+    </div>
+    <div class="theme-default">
+    <div id="slider" class="nivoSlider">
+      <a href="javascript:void(0);"><img src="images/a1.jpg" alt="" width="1260" height="758"/></a>
+      <a href="javascript:void(0);"><img src="images/a2.jpg" alt="" width="1260" height="758"/></a>
+      <a href="javascript:void(0);"><img src="images/a3.jpg" alt="" width="1260" height="758"/></a>
+      <a href="javascript:void(0);"><img src="images/a4.jpg" alt="" width="1260" height="758"/></a>
+      </d1920
+    </div>
+  </div>
+    <div id="perspective">
+      <div id='wrap'>
+        <img src="images/y.png" />
+        <img src="images/yy.png" />
+        <img src="images/yyy.png" />
+        <img src="images/yyyy.png" />
+        <img src="images/y.png" />
+        <img src="images/yy.png" />
+        <img src="images/yyy.png" />
+        <img src="images/yyyy.png" />
+        <img src="images/y.png" />
+        <img src="images/yy.png" />
+        <img src="images/yyy.png" />
+        <img src="images/yyyy.png" />
+        <img src="images/game26l_74c04f2.jpg" />
+        <img src="images/game27l_a45499e.jpg" />
+        <img src="images/game28l_bddc632.jpg" />
+        <img src="images/game29l_7aeb205.jpg" />
+        <img src="images/game30l_3181081.jpg" />
+        <img src="images/game31l_1e68ea9.jpg" />
+        <img src="images/game32l_ff3c7fc.jpg" />
+        <img src="images/game33l_da6623f.jpg" />
+        <img src="images/game23l_9743e34.jpg" />
+        <img src="images/game22l_feb7f72.jpg" />
+        <p></p>
+
+      </div>
+    </div>
+  </div>
+  <!--游戏展示的结束-->
+
+  <!--合作媒体的开始-->
+  <div class="chengKai"></div>
+  <div class="cooperation">
+    <div class="cooperationbg">
+    </div>
+    <div class="cooperationli">
+      <ul>
+        <li><img data-original="images/meitiimg1_6411bc1.png" alt=""></li>
+        <li><img data-original="images/meitiimg2_fc33961.png" alt=""></li>
+        <li><img data-original="images/meitiimg3_2e8dc43.png" alt=""></li>
+        <li><img data-original="images/meitiimg4_d04a6cb.png" alt=""></li>
+        <li><img data-original="images/meitiimg5_e8c041e.png" alt=""></li>
+        <li><img data-original="images/meitiimg6_42a2f77.png" alt=""></li>
+        <li><img data-original="images/meitiimg7_577e75f.png" alt=""></li>
+        <li><img data-original="images/meitiimg8_99b29f9.png" alt=""></li>
+        <li><img data-original="images/meitiimg9_0b0a9d7.png" alt=""></li>
+        <li><img data-original="images/meitiimg10_f947ff3.png" alt=""></li>
+        <li><img data-original="images/meitiimg11_8c69753.png" alt=""></li>
+        <li><img data-original="images/meitiimg12_1d92640.png" alt=""></li>
+        <li><img data-original="images/meitiimg13_5c9e245.png" alt=""></li>
+        <li><img data-original="images/meitiimg14_f13e637.png" alt=""></li>
+        <li><img data-original="images/meitiimg15_c641afa.png" alt=""></li>
+        <li><img data-original="images/meitiimg16_dbfd9e9.png" alt=""></li>
+        <li><img data-original="images/meitiimg17_72961f7.png" alt=""></li>
+        <li><img data-original="images/meitiimg18_372db86.png" alt=""></li>
+        <li><img data-original="images/meitiimg19_74205a7.png" alt=""></li>
+        <li><img data-original="images/meitiimg20_31c3bc3.png" alt=""></li>
+        <li><img data-original="images/meitiimg21_7b49cf2.png" alt=""></li>
+        <li><img data-original="images/meitiimg22_737bc06.png" alt=""></li>
+        <li><img data-original="images/meitiimg23_d9dcde8.png" alt=""></li>
+        </ul>
+    </div>
+  </div>
+  <!--合作媒体的结束-->
+
+  <!-- 网页底部开始 -->
+  <div class="footer">
+    <div class="w footer-game-list clearfix">
+      <div class="game-list">
+        <div class="dd" id="game_list_dd">
+          <div class="game-class clearfix">
+            <div class="pc-game">客户端游戏</div>
+            <div class="mobile-game">手机游戏</div>
+          </div>
+          <div class="game-link clearfix" id="game_link">
+            <div class="role">
+              <dl>
+                <dt>角色扮演</dt>
+                <dd><a href="javascript:void(0);">梦幻西游电脑版<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大话2经典版<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天下3<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">逆水寒<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天谕<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">龙魂<dd><a href="javascript:void(0);">主公莫慌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况俱乐部<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大富翁9<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">功夫熊猫3手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">倩女幽魂录<i class="hot-icon"></i></a></dd><dd><a href="javascript:void(0);">主公莫慌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况俱乐部<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大富翁9<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">功夫熊猫3手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">泰亚史诗<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大话2免费版<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);"> 新大话3经典版<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">新大话3免费版<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">镇魔曲<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">镇魔曲页<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">游大唐无双<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">武魂2<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魔兽世界<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">暗黑破坏神3<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">新飞飞<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">精灵传说<i class="new-icon"></i></a></dd>
+              </dl>
+            </div>
+            <div class="athletics">
+              <dl>
+                <dt>竞技/休闲</dt>
+                <dd><a href="javascript:void(0);">我的世界<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">守望先锋<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">荒野行动Plus<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">EVE Online<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">突击英雄<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽战区<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽战区<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽战区<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战意<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘境对决<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">风暴英雄<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">星际争霸Ⅱ<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">英雄三国<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">炉石传说<i class="new-icon"></i></a></dd>
+              </dl>
+            </div>
+            <div class="hot-rec">
+              <dl>  
+                <dt>热门推荐</dt>
+                <dd><a href="javascript:void(0);">梦幻西游手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">大话西游手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">倩女幽魂手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">阴阳师</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">决战！平安京</a><i class="new-icon"></i></dd>
+                
+                <dd><a href="javascript:void(0);">荒野行动</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">第五人格</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">神都夜行录</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">楚留香</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">率土之滨</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">天下手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">镇魔曲手游</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">非人学园</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">大唐无双唯美篇</a><i class="new-icon"></i></dd>
+                <dd><a href="javascript:void(0);">光明大陆</a><i class="new-icon"></i></dd>
+              </dl>
+            </div>
+            <div class="news-rec">
+              <dl>
+                <dt>竞新品推荐</dt>
+                <dd><a href="javascript:void(0);">梦幻西游3D<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">暗黑破坏神：不朽<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无限战车<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">我的世界Minecraft<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猎手之王<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">花与剑<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">Sky光遇<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">流星蝴蝶剑<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">一起优诺<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况足球<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">终结者2官方手游<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">孤岛先锋<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">逗斗火柴人<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">舰无虚发：暗星<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">明日之后<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况：王者集结<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">绘真·妙笔千山<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战舰世界闪击战<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">坦克世界闪击战<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战争怒吼<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">权力与纷争<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">极客战记<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天启联盟<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">轩辕剑龙舞云山<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">泰坦黎明<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">战国志<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">星战前夜：无烬星河<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">三国如龙传<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">边境之旅<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">网易棋牌<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">神谕文明<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">悠梦YuME<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">永远的7日之都<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">风暴对决<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猎魂觉醒<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">游戏王：决斗链接<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天谕手游<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">迷室The Room<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">绿茵之巅<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">海岛纪元<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">汉王纷争<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">泡泡趴<i class="new-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">叛逆性百万亚瑟王<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">狼人杀<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魔法禁书目录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">梦幻西游无双<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魂之轨迹<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘境对决<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">九州海上牧云记<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">影之诗<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">暴走小飞机<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猪场怼怼乐<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">潮人篮球<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘宝猎人:王牌猎手<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">三国诛将录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">重装突击<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">劲舞团<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">坦克连<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大话西游热血版<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大航海之路<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">超物理基斗<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">三少爷的剑<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">迷雾世界萌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">王EX<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">飞刀又见飞刀<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">秘宝猎人<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">伏魔咒<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天下X天下<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">异次元战姬<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">永恒边境<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽神域<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">斩魂手游版<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">格罗亚传奇<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">雨血：影之刃<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">花语月<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">乱斗西游2<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">惊梦<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">火拼萌萌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">消超能动物联盟<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">口袋侏罗纪<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">迷你西游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">主公莫慌<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">实况俱乐部<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大富翁9<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">功夫熊猫3手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">倩女幽魂录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">魂之幻影<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">大唐游仙记<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">天下HD<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">无尽战区·觉醒<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">荆棘王座<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">西游神魔决<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">有杀气童话<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">小汪汪<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">小时代官方游戏<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">妖刀少女异闻录<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">猫和老鼠官方手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">功夫熊猫官方手游<i class="hot-icon"></i></a></dd>
+                <dd><a href="javascript:void(0);">初音速<i class="hot-icon"></i></a></dd>
+              </dl>
+            </div>
+        </div>
+        <div class="look-more" id="look_more"><a href="javascript:;">查看更多</a></div>
+        <div class="game-icon-desc">
+          <span><i class="new-icon"></i>热门游戏</span><span><i class="hot-icon"></i>最新游戏</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="service-list">
+      <div class="w clearfix">
+        <div class="service-box game-help">
+          <div class="dt">
+            <i class="dt-icon"></i>游戏助手
+          </div>
+          <div class="dd">
+            <ul>
+              <li>
+                <a href="">
+                  <p class="service-name">网易MuMu</p>
+                  <p class="service-desc">电脑玩手游官方模拟器</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">网易精英玩家社区</p>
+                  <p class="service-desc">充值购卡</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-box buy-service">
+          <div class="dt">
+            <i class="dt-icon"></i>充值服务
+          </div>
+          <div class="dd">
+            <ul>
+              <li>
+                <a href="">
+                  <p class="service-name">充值服务</p>
+                  <p class="service-desc">安全，多样，快捷 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">在线购卡</p>
+                  <p class="service-desc">在线支付，即时使用 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">藏宝阁</p>
+                  <p class="service-desc">游戏道具交易系统 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">网易游戏印象</p>
+                  <p class="service-desc">网易周边，官方正品</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-box game-help">
+          <div class="dt">
+            <i class="dt-icon"></i>安全保障
+          </div>
+          <div class="dd">
+            <ul>
+              <li>
+                <a href="">
+                  <p class="service-name">手机将军令</p>
+                  <p class="service-desc">帐号安全，一手掌握</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">举报中心</p>
+                  <p class="service-desc">中国网络游戏版权联盟</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-box other-service">
+          <div class="dt">
+            <i class="dt-icon"></i>游戏综合
+          </div>
+          <div class="dd">
+            <ul>
+              <li>
+                <a href="">
+                  <p class="service-name">玩红计划</p>
+                  <p class="service-desc">寻找梦想合伙人 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">UU加速器</p>
+                  <p class="service-desc">让您的游戏更顺畅 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">CC语音</p>
+                  <p class="service-desc">沟通无阻，畅玩游戏 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">游戏百科</p>
+                  <p class="service-desc">专业齐全的游戏知识 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">网易BUFF</p>
+                  <p class="service-desc">Steam饰品交易平台 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">游戏推广员</p>
+                  <p class="service-desc">参与推广，获游戏大奖 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">黑猪电竞</p>
+                  <p class="service-desc">游戏约玩社交平台 </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="service-name">NeXT电竞</p>
+                  <p class="service-desc">Fight for every heartbeat</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="more-service">
+          <span class="service-dt">客户服务<i>></i></span>
+          <ul>
+            <li><a href="javascript:void(0);">GM服务</a></li>
+            <li><a href="javascript:void(0);">帐号修复</a></li>
+            <li><a href="javascript:void(0);">更改密码 </a></li>
+            <li><a href="javascript:void(0);">手机验证特权 </a></li>
+            <li><a href="javascript:void(0);">游戏知道 </a></li>
+            <li><a href="javascript:void(0);">密保中心 </a></li>
+            <li><a href="javascript:void(0);">自助百宝箱</a></li>
+          </ul>
+        </div>
+        <div class="service-phone">
+          <span class="service-dt">客户服务<i>></i></span>
+          <a class="service-phone-num" href="javscript:;">95163000</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="w">
+        <div class="center-block">
+          <div class="game-163-link">
+            <ul>
+              <li><a href="javascript:void(0);"><img src="images/netease.2.png" alt=""></a></li>
+              <li><a href="javascript:void(0);"><img src="images/nie.2.png" alt=""></a></li>
+              <li><a href="javascript:void(0);"><img src="images/wen.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="concat">
+              <span><a href="javascript:void(0);">公司简介</a></span>
+              <span><a href="javascript:void(0);">客户服务</a></span>
+              <span><a href="javascript:void(0);">相关法律</a></span>
+              <span><a href="javascript:void(0);">网易游戏</a></span>
+              <span><a href="javascript:void(0);">联系我们</a></span>
+              <span><a href="javascript:void(0);">商务合作</a></span>
+              <span><a href="javascript:void(0);">加入我们</a></span>
+          </div>
+          <div class="copyright-txt">
+              网易公司版权所有 ©1997-2018<a href="javascript:void(0);">中国网络游戏版权保护联盟举报中心</a>
+          </div>
+          <div class="licence">《网络文化经营许可证》&nbsp;&nbsp;粤网文[2014]0636-236号</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 网页底部结束 -->
+
+  <!--固定猫咪返回顶部的开始-->
+  <div id="maomi">
+    <a href="javascript:void(0);"><img src="images/piao1_54e57a0.png" alt="" title="返回顶部"></a>
+  </div>
+  <!--固定猫咪返回顶部的结束-->
+
+</body>
+</html>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script src="js/polyfill.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script>
+
+</script>

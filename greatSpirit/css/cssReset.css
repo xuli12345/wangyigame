@@ -1,0 +1,60 @@
+/*css样式初始化*/
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+dl,
+dt,
+dd,
+p,
+a,
+span,
+i,
+s,
+b,
+input,
+img {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px '微软雅黑';
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+i {
+    font-style: normal;
+}
+b {
+    font-weight: normal;
+}
+s {
+    text-decoration: none;
+}
+input {
+    outline: none;
+    border: 0;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}

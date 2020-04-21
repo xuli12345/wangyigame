@@ -1,0 +1,84 @@
+/*初始化开始*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+div,
+p,
+a,
+li,
+ul,
+ol,
+i,
+del,
+ins,
+span,
+strong,
+em,
+input{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 400;
+}
+
+body {
+    font: 12px 宋体, "Arial Narrow", HELVETICA;
+    background-color: #f6f6f6;
+}
+
+i{
+    font-style: normal;
+}
+
+.clearfix:after{
+    content: ".";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1260px;
+    position: relative;
+    margin: 0 auto;
+}
+
+b {
+    font-weight: normal;
+}

@@ -1,0 +1,799 @@
+/* CSS初始化代码,单独文件 */
+html,
+body,
+div,
+span,
+p,
+a,
+input,
+img,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+del,
+ins,
+i,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0; /*清除元素的内外边距*/
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none; /*清除外轮廓线*/
+}
+
+ul, ol {
+    list-style: none; /*去掉原样式中的小黑点*/
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: none;
+    vertical-align: middle; /*去掉图片底部默认的3px空白缝隙*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体"; /*字体的自动识别*/
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none; /*不可以随意拖动*/
+}
+
+table {
+    border-collapse: collapse; /*合并外连线*/
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+s, i, em { /*一般是起装饰作用*/
+    font-style: normal; /*去掉原有的样式*/
+    text-decoration: none; /*去掉下划线或是删除线*/
+}
+
+body {
+    font: 12px/150% Microsoft Yahei,"\5FAE\8F6F\96C5\9ED1",arial; /*unicode的写法, 宋体的写法*/
+    color: #546173; /*150%基于当前字体尺寸的百分比行间距*/
+    background-color: #fbfbfb;
+}
+
+.clearfix:before, .clearfix:after { /*清除浮动*/
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取*/
+    width: 1010px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.current {
+    display: block;
+}
+
+/*头部开始*/
+.header {
+    height: 55px;
+}
+
+.header .logo a {
+    display: block;
+    width: 133px;
+    height: 55px;
+    text-indent: -9999px;
+    float: left;
+    background: url("../CSImgs/logo_w.png") no-repeat;
+}
+
+.header .logo span {
+    display: block;
+    width: 140px;
+    height: 52px;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 3px;
+    background: url("../CSImgs/logo_xinyi.png") no-repeat;
+}
+
+.header .headerUl {
+    float: right;
+}
+
+.header .headerUl li {
+    float: left;
+    margin-left: 28px;
+    position: relative;
+}
+
+.header .headerUl li a {
+    display: block;
+    width: 84px;
+    height: 55px;
+    color: #959595;
+    text-align: center;
+    line-height: 55px;
+    position: relative;
+}
+
+.header .headerUl li a i {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #e60013;
+}
+
+.header .headerUl li.li1 a {
+    color: #3e3e3a;
+}
+
+.header .headerUl li a:hover {
+    color: #3e3e3a;
+}
+
+.header .headerUl li.li2 a i {
+    display: none;
+}
+
+.header .headerUl li.li2 a:hover i {
+    display: block;
+}
+/*头部结束*/
+
+/*banner开始*/
+.banner {
+    background: url("../CSImgs/banner_3.png") no-repeat;
+}
+
+.banner .w {
+    position: relative;
+}
+
+.banner .userInfo {
+    padding-top: 7px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10002;
+    background-color: #fbfbfb;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+}
+
+.banner .userInfo a.login-link {
+    width: 57px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.banner .bannerImgs {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .bannerImgs .banner_text {
+    position: absolute;
+    top: 96px;
+    left: 11px;
+    z-index: 101;
+}
+
+.bannerImgs .banner_people {
+    position: absolute;
+    top: 50px;
+    left: 523px;
+    z-index: 100;
+}
+
+.bannerImgs .banner_cloud {
+    width: 1263px;
+    height: 325px;
+    top: 0;
+    left: 456px;
+    z-index: 99;
+}
+
+.bannerImgs .banner_house {
+    position: absolute;
+    top: 55px;
+    left: 329px;
+    z-index: 98;
+}
+/*banner结束*/
+
+/*服务区开始*/
+.servicearea {
+    background: url("../CSImgs/bg_1.jpg") no-repeat top center;
+}
+.servicearea .w {
+    position: relative;
+    height: 850px;
+}
+
+.servicearea .w .sasearch {
+    height: 46px;
+}
+
+.servicearea .w .search {
+    float: right;
+    width: 321px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 16px;
+    position: relative;
+    margin-top: 19px;
+}
+
+.servicearea .search label {
+    float: left;
+    cursor: pointer;
+}
+
+.servicearea .search input {
+    float: left;
+    width: 176px;
+    height: 15px;
+    padding: 5px;
+    line-height: 15px;
+    border: 1px solid #c9c9c9;
+    border-right: 0;
+    font-size: 14px;
+    color: #959595;
+}
+
+.servicearea .search a {
+    display: block;
+    float: left;
+    width: 52px;
+    height: 15px;
+    padding: 5px 0;
+    line-height: 15px;
+    border: 1px solid #959595;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f1f0f0;
+}
+
+.servicearea .satil {
+    width: 288px;
+    height: 110px;
+    text-align: center;
+    color: #546173;
+    margin: 27px auto;
+    position: relative;
+}
+
+.servicearea .satil i {
+    display: block;
+     position: absolute;
+     font-size: 110px;
+     height: 110px;
+     line-height: 110px;
+     top: 0px;
+     left: 0;
+     margin-right: 5px;
+ }
+
+.servicearea .satil span {
+    position: absolute;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    top: 42px;
+    left: 80px;
+}
+
+.servicearea .satil span.span2 {
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    top: 70px;
+    left: 80px;
+}
+
+.servicearea .satab {
+    width: 1010px;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.servicearea .satab span {
+    display: inline-block;
+    width: 247px;
+    height: 33px;
+    border: 1px solid #37b0e9;
+    color: #37b0e9;
+    font-size: 22px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.servicearea .satab span.on,
+.servicearea .satab span:hover {
+    color: #fff;
+    background-color: #37b0e9;
+}
+
+.servicearea .sacon {
+    width: 996px;
+    height: 569px;
+    padding-left: 14px;
+    background-color: #f8f8f9;
+    overflow: hidden;
+    display: none;
+}
+
+.servicearea div.current {
+    display: block;
+}
+
+.servicearea li {
+    float: left;
+    margin: 9px 17px 0;
+}
+
+.servicearea li a {
+    display: block;
+    width: 89px;
+    height: 89px;
+    border-radius: 10px;
+}
+
+.servicearea li a:hover img {
+    transition-duration:0.5s;
+    transform: scale(1.1);
+}
+
+.servicearea li a img {
+    width: 89px;
+    height: 89px;
+    transition-duration:0.5s;
+}
+
+.servicearea li p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 89px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 7px;
+    color: #546173;
+}
+
+.servicearea .sacon2 {
+    width: 996px;
+    height: 589px;
+    padding-left: 14px;
+    background-color: #f8f8f9;
+    overflow: hidden;
+    display: none;
+}
+
+.servicearea .sacon2 .sacon2-top {
+    width: 996px;
+    /*height: 1771px;*/
+    height: 510px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sacon2 .sacon2-top .title {
+    color: #37b0e9;
+    font-size: 24px;
+    line-height: 27px;
+    border-left: 5px solid #37b0e9;
+    padding-left: 5px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+}
+
+.sacon2 .saconbtn {
+    height: 66px;
+    width: 100%;
+    background-color: #f8f9f9;
+    left: 0;
+    bottom: 0;
+    padding-top: 13px;
+}
+
+.sacon2 .saconbtn .closebtn {
+    display: none;
+    /*display: block;*/
+    width: 175px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #37b0e9;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 2px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sacon2 .saconbtn .morebtn {
+    display: block;
+    width: 175px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #37b0e9;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 2px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/*服务区结束*/
+
+/*快速入口开始*/
+.fastenter {
+    margin-top: 54px;
+    height: 489px;
+    position: relative;
+    background: url("../CSImgs/bg_2.jpg") no-repeat top center;
+}
+
+.fastenter .fetit {
+    width: 288px;
+    height: 110px;
+    margin: 27px auto;
+    position: relative;
+    top: 27px;
+    color: #546173;
+}
+
+.fastenter .fetit i {
+    height: 110px;
+    width: 64px;
+    line-height: 110px;
+    font-size: 110px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fastenter .fetit .span1 {
+    position: absolute;
+    font-size: 30px;
+    display: block;
+    top: 42px;
+    left: 80px;
+}
+
+.fastenter .fetit .span2 {
+    position: absolute;
+    font-size: 24px;
+    display: block;
+    top: 72px;
+    left: 80px;
+}
+
+.fastenter .feul {
+    margin-top: 54px;
+}
+
+.fastenter .feul li {
+    float: left;
+    width: 162px;
+    height: 234px;
+    padding: 0 40px;
+    margin-right: 120px;
+}
+
+.fastenter .feul li b {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0 26px;
+    background: url("../CSImgs/icon.less.png");
+}
+
+.fastenter .feul li b.icon1 {
+    background-position: -758px -242px;
+}
+
+.fastenter .feul li .p1 {
+    width: 162px;
+    height: 18px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #3e3e3a;
+}
+
+.fastenter .feul li .p1 {
+    width: 162px;
+    height: 18px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #3e3e3a;
+}
+
+.fastenter .feul li .p2 {
+    width: 162px;
+    height: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    margin-bottom: 26px;
+}
+
+.fastenter .feul li a {
+    color: #37b0e9;
+    display: inline-block;
+    width: 158px;
+    height: 36px;
+    line-height: 36px;
+    border: 2px solid #37b0e9;
+    text-align: center;
+}
+
+.fastenter .feul li a:hover {
+    color: #fff;
+    background-color: #37b0e9;
+}
+
+.fastenter .feul li b.icon2 {
+    background-position: 0 -814px;
+}
+
+.fastenter .feul li b.icon3 {
+    background-position: -112px -814px;
+}
+
+.fastenter .feul li.li3 {
+    margin-right: 0;
+}
+
+.fastenter .feul li.li3 p {
+    width: 196px;
+}
+
+.fastenter .feul li.li3 a {
+    margin-left: 19px;
+}
+/*快速入口结束*/
+
+/*linklist开始*/
+.linklist {
+    height: 86px;
+    padding-top: 80px;
+}
+
+.linklist li {
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-left: 4px solid #37b0e9;
+    padding-left: 6px;
+    text-align: left;
+    font-size: 16px;
+    height: 18px;
+    line-height: 18px;
+    color: #3e3e3a;
+}
+
+.linklist li a {
+    color: #3e3e3a;
+}
+
+.linklist li a:hover {
+    text-decoration: underline;
+}
+
+.linklist li.li1 {
+    width: 106px;
+}
+
+.linklist li.li2 {
+    width: 138px;
+}
+
+.linklist li.li3 {
+    width: 64px;
+}
+/*linklist结束*/
+
+/*底部开始*/
+.footer {
+    position: relative;
+    background-color: #272a2c;
+    padding: 20px;
+    height: 155px;
+}
+
+.footer .center-block {
+    width: 880px;
+    height: 48px;
+    padding-top: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer .game-163-link {
+    width: 350px;
+    height: 48px;
+}
+
+.footer .game-163-link li {
+    float: left;
+    margin-top: 2px;
+}
+
+.footer .game-163-link li.li1 a {
+    display: block;
+    width: 118px;
+    height: 36px;
+}
+
+.footer .game-163-link li.li2 a {
+    display: block;
+    width: 149px;
+    height: 36px;
+    /*margin-right: 40px;*/
+}
+
+.footer .footer-links {
+    width: 414px;
+    height: 48px;
+    position: absolute;
+    left: 300px;
+    top: 10px;
+}
+
+.footer .footer-links i {
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.footer .footer-links i a {
+    color: blue;
+}
+
+.footer .footer-links i a.last {
+    color: purple;
+}
+
+.footer .footer-links i a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-links i.i2 {
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+
+.footer .notice {
+    width: 100%;
+    height: 82px;
+    padding-top: 10px;
+}
+
+.footer .notice p {
+    line-height: 24px;
+}
+/*底部结束*/
+
+大背景居中
+
+.servicearea,.fastenter,.banner{
+    position: relative;
+    width: 1920px;
+    left:50%;
+    margin-left: -960px;
+}
+
+.servicearea,.fastenter, {
+    top: -20px;
+}
+
+
+
+

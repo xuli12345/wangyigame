@@ -1,0 +1,76 @@
+@mixin tac-lh($height) {
+  text-align: center;
+  line-height: #{$height}px;
+}
+
+@mixin lh-h($height) {
+  line-height: #{$height}px;
+  height: #{$height}px;
+}
+
+@mixin tac-lh-h($height) {
+  text-align: center;
+  line-height: #{$height}px;
+  height: #{$height}px;
+}
+
+@mixin a-block {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@mixin w100-h100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin text-oh($wid) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: $wid + px;
+}
+
+// 父元素计数器开始
+@mixin counterName($name, $num) {
+  counter-reset: $name $num;
+}
+
+@mixin counterIncre($name) {
+  content: counter($name);
+  counter-increment: $name;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin circle($wid, $mginR, $col, $zIndex, $bgc) {
+  width: $wid + px;
+  height: $wid + px;
+  border-radius: $wid / 2 + px;
+  cursor: pointer;
+  float: left;
+  margin-right: $mginR + px;
+  background-color: $col;
+  z-index: $zIndex;
+  &:hover {
+      background-color: $bgc;
+  }
+}
+
+@mixin arrow($wid, $hei, $bgc, $hoverBgc, $zIndex) {
+  position: absolute;
+  width: $wid + px;
+  height: $hei + px;
+  cursor: pointer;
+  z-index: $zIndex;
+  top: 50%;
+  margin-top: -$hei / 2 + px;
+  background: $bgc;
+  &:hover {
+      background-position: $hoverBgc;
+  }
+}

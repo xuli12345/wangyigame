@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* 版心开始 */
+.w {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+/* 版心结束*/
+/* 网页头部开始 */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 100px;
+  position: absolute;
+}
+.header .w {
+  position: relative;
+}
+
+.header-nav li {
+  float: left;
+}
+.header-nav li:before {
+  content: "·";
+  color: #333;
+  float: left;
+  margin: 0 22px;
+}
+.header-nav .tag:before {
+  display: none;
+}
+.header-nav a {
+  font-size: 16px;
+  color: #818181;
+}
+.header-nav a:hover {
+  color: #cf0f32;
+}
+
+.logo {
+  float: left;
+  padding-top: 21px;
+  margin-right: 114px;
+}
+.logo h1 {
+  width: 177px;
+  height: 58px;
+}
+.logo a {
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/logo1_d853983.png);
+}
+
+.header .game-list {
+  position: absolute;
+  right: 7px;
+}
+.header .dt {
+  width: 120px;
+  height: 40px;
+  line-height: 1;
+  padding-top: 80px;
+  text-align: center;
+  background-color: #cf1132;
+  transition: all .3s;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+.header .dt span::selection {
+  background: transparent;
+}
+.header .dd {
+  width: 1260px;
+  height: 959px;
+  position: absolute;
+  background-color: #282b2d;
+  left: -1140px;
+  top: 100px;
+  overflow: hidden;
+  display: none;
+}
+.header .dd a {
+  color: #c3c3c3;
+}
+.header .dd a:hover {
+  color: #fff;
+}
+.header .game-icon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  background: url(../images/topbar_z_3563e40.png);
+  top: 38px;
+  left: 50%;
+  margin-left: -17px;
+}
+.header .game-list-dt {
+  background-color: #282b2d;
+}
+.header .active-icon {
+  background-position-x: -34px;
+}
+.header .game-desc {
+  float: right;
+  padding-right: 10px;
+}
+.header .game-desc span {
+  margin-right: 30px;
+}
+.header .game-desc i {
+  margin-right: 4px;
+}
+.header .game-list-header {
+  line-height: 68px;
+  padding-top: 18px;
+  color: #fff;
+}
+.header .game-list-header h3 {
+  float: left;
+  padding-left: 64px;
+  font-size: 20px;
+}
+.header .game-link,
+.header .game-class {
+  padding-left: 40px;
+}
+.header .game-class {
+  background-color: #35373a;
+  color: #dd1136;
+}
+.header .game-link dt {
+  color: #6b6b6c;
+}
+.header .role,
+.header .athletics,
+.header .hot-rec {
+  border-right: 1px solid #454545;
+}
+.header .pack-up {
+  width: 56px;
+  height: 14px;
+  background: url(../images/topbar_z_3563e40.png) 0 -34px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -28px;
+  bottom: 15px;
+  cursor: pointer;
+}
+.header .pack-up:hover {
+  background-position-y: -48px;
+}
+
+/* 网页头部结束 */
+/* 网页底部开始 */
+.footer {
+  height: 1095px;
+}
+
+.footer-game-list {
+  margin-bottom: 40px;
+}
+.footer-game-list dt {
+  color: #c21d35;
+}
+.footer-game-list dd a {
+  color: #666;
+}
+.footer-game-list .game-class {
+  height: auto;
+  background-color: #fbfbfb;
+  border-left: 1px solid #eee;
+}
+.footer-game-list .game-link {
+  height: 480px;
+}
+.footer-game-list .role {
+  border-left: 1px solid #eee;
+}
+.footer-game-list .role,
+.footer-game-list .athletics,
+.footer-game-list .hot-rec {
+  border-right: 1px solid #eee;
+}
+.footer-game-list .look-more {
+  width: 120px;
+  text-align: center;
+  line-height: 38px;
+  height: 38px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  margin: 40px auto 0;
+}
+.footer-game-list .look-more:hover a {
+  background-color: #dbdcdf;
+}
+.footer-game-list .look-more a {
+  color: #6d6d6d;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.footer-game-list .game-icon-desc {
+  text-align: center;
+  margin-top: 24px;
+}
+.footer-game-list .game-icon-desc span {
+  margin-left: 10px;
+  color: #5a5a5a;
+}
+.footer-game-list .game-icon-desc i {
+  margin-right: 6px;
+}
+
+.service-list {
+  height: 334px;
+  background-color: #f6f7fb;
+}
+
+.game-help {
+  width: 150px;
+}
+
+.buy-service {
+  width: 298px;
+}
+.buy-service ul {
+  margin-right: -20px;
+}
+
+.other-service {
+  width: 600px;
+}
+.other-service ul {
+  margin-right: -40px;
+}
+
+.service-box {
+  float: left;
+  margin-right: 14px;
+}
+.service-box .dt {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+  margin-top: 42px;
+}
+.service-box .dt-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 18px;
+  vertical-align: bottom;
+  margin-top: -2px;
+  background: url(../images/l-icon_31f9f2c.png);
+}
+.service-box li {
+  width: 150px;
+  height: 80px;
+  background-color: #e3e3e3;
+  float: left;
+  text-align: center;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+.service-box li:hover {
+  color: #fff;
+}
+.service-box a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.service-box a:hover {
+  background-color: #cf1132;
+}
+.service-box a:hover p {
+  color: #fff;
+}
+.service-box a p {
+  transition: all .3s;
+}
+
+.service-name {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.service-desc {
+  color: #808080;
+}
+
+.service-dt {
+  font-size: 14px;
+  color: #454240;
+}
+.service-dt i {
+  color: #d9dde1;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.more-service {
+  margin-top: 36px;
+}
+.more-service,
+.more-service ul,
+.more-service li,
+.more-service span {
+  float: left;
+}
+.more-service li:after {
+  content: "|";
+  float: right;
+  color: #dfdde5;
+  margin: 0 3px;
+}
+.more-service a {
+  color: #888;
+}
+.more-service a:hover {
+  color: #cf1132;
+}
+
+.service-phone {
+  margin-top: 36px;
+  float: right;
+  margin-right: 170px;
+}
+.service-phone-num {
+  font-size: 18px;
+}
+.service-phone a {
+  color: #454240;
+}
+
+.copyright {
+  height: 107px;
+  padding-top: 40px;
+  background-color: #272a2c;
+  color: #fff;
+}
+.copyright a {
+  color: #fff;
+}
+
+.center-block {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.game-163-link li {
+  float: left;
+}
+.game-163-link li:last-child {
+  margin-left: 15px;
+  margin-right: 18px;
+}
+
+.concat {
+  float: left;
+}
+.concat span {
+  float: left;
+}
+.concat span:before {
+  content: '-';
+  margin: 0 4px;
+}
+.concat span:first-child:before {
+  display: none;
+}
+.concat span:hover a {
+  text-decoration: underline;
+}
+
+.copyright-txt {
+  float: left;
+  padding-top: 14px;
+}
+.copyright-txt a {
+  margin-left: 22px;
+}
+.copyright-txt a:hover {
+  text-decoration: underline;
+}
+
+.licence {
+  margin-top: 22px;
+  float: left;
+}
+
+/* 网页底部结束 */
+
+/*# sourceMappingURL=index.css.map */

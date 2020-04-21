@@ -1,0 +1,655 @@
+.topNav {
+    height: 90px;
+    background: #000;
+}
+.topNav .w {
+    overflow: hidden;
+}
+.topNav .logo {
+    float: left;
+    margin-top: 16px;
+    margin-left: 25px;
+}
+.topNav .logo  a {
+    display: inline-block;
+    width: 199px;
+    height: 58px;
+    background: url("//img6.cache.netease.com/game/img2018/play/img/logo-y.png");
+    text-indent: -999px;
+    overflow: hidden;
+}
+.topNav ul {
+    float: left;
+    margin-left: 90px;
+}
+.topNav li {
+    float: left;
+    font-size: 16px;
+    line-height: 86px;
+}
+.topNav li a {
+    color: rgba(255,255,255,.7);
+}
+.topNav .navLeft {
+    margin-right: 53px;
+    border-bottom: 4px solid #000;
+}
+.topNav .line {
+    margin: 0 20px;
+    color: #666;
+}
+.topNav .navCenter {
+    margin-left: 30px;
+}
+.topNav .navCenter a {
+    color: #999;
+}
+.topNav .navCenter .imge {
+    float: left;
+    margin-right: 5px;
+   font-size: 30px;
+    line-height: 90px;
+    transition: all 1s;
+
+    transform: perspective(500px);
+}
+.topNav .navCenter .imge:hover {
+    transform: perspective(500px) rotateY(540deg);
+}
+
+
+
+
+
+
+
+
+.topNav .navRight {
+    margin-right: 40px;
+    
+}
+.topNav .navRight a {
+    color: #999;
+}
+.topNav .dlu {
+    margin-left: 80px;
+}
+.topNav .kuang {
+    float: right;
+    width: 72px;
+    height: 36px;
+    border-radius: 18px;
+    border: 1px solid #666;
+    margin-top: 24px;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 20px;
+
+}
+.topNav .kuang>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 36px;
+    color: rgba(255,255,255,.7);
+}
+
+/*-----------------header------------------*/
+.header {
+    /*margin-top: 10px;*/
+    /*margin-left: 20px;*/
+    position: relative;
+    top: 10px;
+    height: 410px;
+}
+
+.header .tuiGuang {
+    position: absolute;
+    left: 20px;
+    width: 790px;
+    height: 410px;
+    overflow: hidden;
+    background: #666;
+}
+.header .tuiGuang li{
+
+    width: 100%;
+    height: 100%;
+
+}
+.header .tuiGuang li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+/*.header .tuiGuang li:first-child {*/
+    /*display: block;*/
+/*}*/
+.header .tuiGuang img {
+    transition: all 0.6s;
+}
+.header .tuiGuang img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+.tuiGuang li .content {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    /*display: none;*/
+
+}
+.tuiGuang li .content .p1 {
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.tuiGuang li .content .p2 {
+    font-size: 24px;
+    line-height: 27px;
+    opacity: .7;
+}
+
+
+
+
+.tuiGuang .icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.tuiGuang .icon i {
+    float: left;
+    width: 20px;
+    height: 5px;
+    z-index: 9;
+    cursor: pointer;
+    background: #fff;
+    margin-left: 10px;
+}
+
+.tuiGuang .icon .first {
+    background: yellow;
+}
+
+
+/*-----------------head-right------------------*/
+
+.header .head_right {
+    position: absolute;
+    right: 20px;
+    width: 520px;
+    height: 410px;
+}
+.head_right .shuRu {
+    width: 470px;
+    height: 35px;
+    border: 1px solid #888;
+    padding: 5px 20px;
+}
+.shuRu i {
+    float: left;
+    margin-top: 5px;
+    width: 23px;
+    height: 25px;
+    background: url("../images/globals.png") -20px -38px;
+}
+.shuRu input {
+    float: left;
+    margin-left: 10px;
+    height: 35px;
+    width: 430px;
+}
+.head_right .guanZhu {
+    width: 510px;
+    height: 90px;
+
+}
+.head_right .guanZhu span {
+    float: left;
+    line-height: 90px;
+    margin-left: 5px;
+}
+.head_right .guanZhu  ul {
+    float: left;
+    line-height: 90px;
+    margin-left: 20px;
+}
+.guanZhu  ul li {
+    float: left;
+    margin-right: 30px;
+}
+.guanZhu .dashen a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    background: url("../images/focus1.png") 0 -64px;
+}
+
+.guanZhu .xinlang a {
+    display: block;
+    width: 35px;
+    height: 30px;
+    margin-top: 30px;
+    background: url("../images/focus1.png") -30px -62px;
+}
+.guanZhu .zhihu a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-top: 31px;
+    background: url("../images/focus1.png") -65px -64px;
+}
+.guanZhu .lianshu a {
+    display: block;
+    width: 31px;
+    height: 31px;
+    margin-top: 29px;
+    background: url("../images/focus1.png") -93px -64px;
+}
+
+.guanZhu .line {
+    font-size: 26px;
+    line-height: 90px;
+    color: #666;
+}
+.guanZhu .xiwang {
+    margin-left: 15px;
+}
+.guanZhu .xiwang a i {
+    float: left;
+    width: 33px;
+    height: 28px;
+    margin-top: 31px;
+    background: url("../images/focus1.png") -124px -64px;
+}
+.guanZhu .xiwang span {
+    float: left;
+    color: #bdbdbd;
+}
+.guanZhu .dashen a:hover {
+    background-position: 0 -30px;
+}
+.guanZhu .xinlang a:hover {
+    background-position: -30px -30px;
+}
+.guanZhu .zhihu a:hover {
+    background-position: -65px -30px;
+}
+.guanZhu .lianshu a:hover {
+    background-position: -93px -30px;
+}
+.guanZhu .xiwang i:hover {
+    background-position: -124px -27px;
+
+}
+.guanZhu .xiwang span:hover {
+    color: red;
+}
+
+.head_right .tu {
+    position: relative;
+    width: 510px;
+    height: 270px;
+}
+.head_right .tu .tuLeft {
+    position: absolute;
+    left: 40px;
+    width: 208px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.head_right .tu .tuRight {
+    position: absolute;
+    right: 40px;
+    width: 203px;
+    height: 270px;
+    overflow: hidden;
+}
+.tu .content {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 18px;
+
+}
+.tu .content .shang {
+    width: 80px;
+    height: 30px;
+    background: yellow;
+    line-height: 30px;
+    color: #000;
+    border-radius: 15px;
+    text-align: center;
+}
+.tu .content .xia {
+    font-weight: bold;
+    color: #888;
+    line-height: 30px;
+}
+
+.head_right .tu img {
+    transition: all 0.6s;
+}
+.head_right .tu img:hover{
+    transform: scale(1.2);
+}
+
+/*-----------------------main-------------------*/
+
+.main {
+    margin-top: 50px;
+
+
+}
+.main .ce {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid #666;
+
+}
+.main .ce .cont {
+    float: left;
+    font-size: 36px;
+    line-height: 46px;
+    border-bottom: 4px solid #000;
+}
+.main .ce a {
+    float: right;
+    color: #666;
+    font-size: 16px;
+    line-height: 46px;
+
+}
+.main .ce a:hover {
+    color: #f4b126;
+}
+
+/*---------------------手风琴----------------------*/
+
+.main #box {
+    width: 1220px;
+    height: 240px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.main #box ul {
+    /*width: 970px;*/
+}
+.main #box li {
+    width: 190px;
+    height: 240px;
+    float: left;
+    cursor: pointer;
+}
+
+/*----------------精选-------------------*/
+
+.main .jx {
+    position: relative;
+    left: 20px;
+    right: 20px;
+    height: 950px;
+    width: 1326px;
+}
+
+
+
+.main .jing {
+    position: absolute;
+    left: 0;
+    width: 790px;
+    height: 920px;
+
+    /*margin-top: 20px;*/
+    /*border: 1px solid #666;*/
+}
+.main .news {
+    position: absolute;
+    right: 0;
+    width: 520px;
+    height: 920px;
+
+    /*margin-top: 20px;*/
+    /*border: 1px solid #666;*/
+}
+.jx>.jing>.ce,.jx>.news>.ce {
+    margin: 30px auto;
+    /*margin-bottom: 20px;*/
+}
+
+.jing li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 385px;
+    height: 255px;
+    overflow: hidden;
+}
+.jing>ul>li>a {
+    position: relative;
+    display: block;
+    width: 385px;
+    height: 255px;
+}
+
+.jing li .content {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 18px;
+
+}
+.jing li  .content .shang {
+    width: 160px;
+    height: 30px;
+    background: #c7bda5;
+    line-height: 30px;
+    color: #000;
+    border-radius: 2px;
+    text-align: center;
+}
+.jing li  .content .xia {
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.jing li img {
+    transition: all 0.6s;
+}
+.jing li img:hover{
+    transform: scale(1.2);
+}
+.news ul {
+    border: 1px solid #777;
+    overflow: hidden;
+}
+.news ul li {
+    width: 100%;
+    height: 80px;
+    /*font-size: 16px;*/
+    /*line-height: 80px;*/
+    /*border-bottom: 1px solid red;*/
+}
+.news ul li.tar {
+    border-bottom: 1px solid #777;
+}
+.news ul li.tar .de {
+    float: left;
+    width: 58px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 34px;
+    line-height: 70px;
+    color: #666;
+    text-align: center;
+    background: url("../images/index.png") ;
+}
+.news ul li.tar .p1 {
+    float: left;
+    margin-left: 60px;
+    margin-top: 16px;
+    color: #999;
+}
+.news ul li.tar .p2 {
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: #333;
+}
+.news ul li .d {
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    margin-left: 20px;
+    color: #bdbdbd;
+}
+.news ul li i {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 32px;
+    margin-left: 10px;
+}
+.news ul li .t {
+    float: left;
+    width: 350px;
+    height: 55px;
+    padding-top: 25px;
+    /*text-align: center;*/
+    /*line-height: 80px;*/
+    font-size: 14px;
+
+
+    line-height: 20px;
+    margin-left: 20px;
+    color: #333;
+    border-bottom: 1px solid #999;
+}
+.news ul li.last {
+    border-bottom: 1px solid #999;
+}
+.news ul li.last .t{
+    border-bottom: none;
+}
+.news ul li.y {
+    overflow: hidden;
+}
+.news ul li.y:hover {
+    opacity: 0.7;
+}
+.news ul li.y a {
+    display: block;
+    width: 234px;
+    height: 36px;
+    background: yellow;
+    border-radius: 18px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    margin: 22px auto;
+    /*text-align: center;*/
+    /*line-height: 80px;*/
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+.news .bot {
+    /*width: 500px;*/
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.news .bot .content {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*.news .bot a:hover{*/
+    /*color: yellow;*/
+/*}*/
+
+
+
+/*----------------底部-------------------*/
+.floor {
+    background: #000;
+    /*height: 130px;*/
+}
+.floor .logo h1 {
+    overflow: hidden;
+}
+.floor .logo  a {
+    display: block;
+    width: 199px;
+    height: 58px;
+    margin: 50px auto 35px;
+    background: url("//img6.cache.netease.com/game/img2018/play/img/logo-y.png");
+    text-indent: -999px;
+    overflow: hidden;
+}
+.floor ul {
+    width: 500px;
+    margin: 0 auto;
+}
+.floor li {
+    float: left;
+    color: #444;
+    line-height: 44px;
+    margin-left: 20px;
+}
+.floor li a {
+    font-size: 14px;
+    line-height: 44px;
+
+    color: #666;
+}
+.floor li a:hover {
+    color: #fff;
+}
+.floor p {
+    color:#666;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

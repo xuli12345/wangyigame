@@ -1,0 +1,55 @@
+/**
+ * Created by YANGBINGHUA on 2018/12/8.
+ */
+$(function(){
+   $('.gongzonghao').mouseenter(function(){
+      $('.gongzonghao_lef').stop(true,false).animate({
+          top:30
+      },200,'linear')
+       $('.gongzonghao_ri').stop(true,false).animate({
+          top:0
+      },200,'linear')
+   })
+    $('.gongzonghao').mouseleave(function(){
+        $('.gongzonghao_lef').stop(true,false).animate({
+            top:0
+        },200,'linear')
+        $('.gongzonghao_ri').stop(true,false).animate({
+            top:30
+        },200,'linear')
+    })
+
+    $('.luntan').mouseenter(function(){
+        $('.luntan_lef').stop(true,false).animate({
+            top:30
+        },200,'linear')
+        $('.luntan_ri').stop(true,false).animate({
+            top:0
+        },200,'linear')
+    })
+    $('.luntan').mouseleave(function(){
+        $('.luntan_lef').stop(true,false).animate({
+            top:0
+        },200,'linear')
+        $('.luntan_ri').stop(true,false).animate({
+            top:30
+        },200,'linear')
+    })
+
+    $('.kefu').mouseenter(function(){
+        $('.kefu_lef').stop(true,false).animate({
+            top:30
+        },200,'linear')
+        $('.kefu_ri').stop(true,false).animate({
+            top:0
+        },200,'linear')
+    })
+    $('.kefu').mouseleave(function(){
+        $('.kefu_lef').stop(true,false).animate({
+            top:0
+        },200,'linear')
+        $('.kefu_ri').stop(true,false).animate({
+            top:30
+        },200,'linear')
+    })
+});

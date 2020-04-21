@@ -1,0 +1,271 @@
+/*main begin*/
+body {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.main {
+
+}
+.main .mainCenter {
+    width: 450px;
+    margin: 0 auto;
+    /*Icon定位需要*/
+    position: relative;
+}
+.mainCenter p {
+    text-align: center;
+}
+.mainCenter .banner_p {
+    padding-top: 70px;
+}
+.mainCenter .slogan_p {
+    margin-top: 42px;
+}
+.mainCenter i {
+    position: absolute;/*相对于mainCenter做绝对定位*/
+}
+.mainCenter .phoneIcon {
+    top: 35px;
+    left: -203px;
+}
+.mainCenter .gameIcon {
+    top: 205px;
+    right: -273px;
+}
+.mainCenter .download {
+    margin-top: 40px;
+    overflow: hidden;/*包含塌陷*/
+}
+.download .qrcode {
+    float: left;
+}
+.download .qrcode img {
+    padding: 5px 2px 2px 6px;
+    background: url('../images/bg_color.png') 180px 179px;
+    border-radius: 5px;
+    margin-top: 14px;
+}
+.mainCenter .downloadBtn {
+    float: right;
+}
+.downloadBtn a {
+    display: block;
+    width: 260px;
+    height: 100px;
+}
+.main .airshipIcon {
+    bottom: -130px;
+    left: -384px;
+    z-index: -1;/*设置层级略矮一级*/
+}
+
+/*wraper*/
+.wraper {
+    width: 1180px;
+    height: 508px;
+    margin: 0 auto;
+    margin-top: 250px;
+    overflow: hidden;
+    /*图片、左右箭头定位需要*/
+    position: relative;
+}
+.wraper ul {
+    width: 5000px;
+}
+.wraper #ulbox li {
+    float: left;
+    position: absolute;
+}.wraper .clearIMG {
+     /*width: 230px;
+     height: 464px;
+     top: 0;
+     left: 463px;
+     z-index: 4*/
+ }
+/*旋转木马图片列表样式begin*/
+
+/*第一个、最后一个li标签样式*/
+/*.wraper #ulbox li:first-child,*/
+/*.wraper #ulbox li:last-child {*/
+    /*width: 148px;*/
+    /*height: 220px;*/
+    /*top: 150px;*/
+    /*z-index: 2*/
+/*}*/
+/*.wraper #ulbox li:first-child {*/
+    /*left: 82px*/
+/*}*/
+/*.wraper #ulbox li:last-child {*/
+    /*left: 950px*/
+/*}*/
+/*/!*第三个li标签样式*!/*/
+/*.wraper #ulbox li:nth-child(3) {*/
+    /*width: 230px;*/
+    /*height: 464px;*/
+    /*top: 0;*/
+    /*left: 463px;*/
+    /*z-index: 4*/
+/*}*/
+/*/!*第二个、倒数第二个li标签样式*!/*/
+/*.wraper #ulbox li:nth-child(2),*/
+/*.wraper #ulbox li:nth-child(4) {*/
+    /*width: 202px;*/
+    /*height: 320px;*/
+    /*top: 100px;*/
+    /*z-index: 3*/
+/*}*/
+/*.wraper #ulbox li:nth-child(2) {*/
+    /*left: 204px*/
+/*}*/
+/*.wraper #ulbox li:nth-child(4) {*/
+    /*left: 750px*/
+/*}*/
+/*旋转木马图片列表样式end*/
+
+.wraper #ulbox li img {
+    width: 100%;/*让图片的宽、高和父盒子一样大，不然会溢出*/
+    height: 100%;
+}
+.wraper #ulbox li p {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    display: none;
+    margin-left: -38px;
+    width: 306px;
+    height: 70px;
+    line-height: 70px;
+    background-color: gray;
+    font-size: 28px;
+    color: #ffffff;
+
+}
+#ulbox li p span {
+    margin-right: 30px;
+}
+.arrowbox a {
+    position: absolute;
+    width: 82px;
+    height: 146px;
+    top: 50%;
+    margin-top: -73px;
+}
+.arrowbox #prev {
+    left: 0;
+}
+.arrowbox #next {
+    right: 0;
+}
+.arrowbox a img {
+    width: 62px;
+    height: 116px;
+    margin: 15px 10px;
+}
+.arrowbox a:hover {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 15px;
+}
+/*main end*/
+/*bottom-bar begin*/
+.bottom-bar {
+    height: 131px;
+    margin-top: 102px;
+    background: url("../images/bottom-bar_bg.png") repeat-x;
+    text-align: center;
+}
+.bottom-bar .qrcode_small {
+    float: left;
+    width: 70px;
+    height: 71px;
+    background: url("../images/bg_color_small.png") 70px 71px;
+    border-radius: 10px;
+    margin-top: 28px;
+    position: relative;/*鼠标悬浮显示大图定位需要*/
+}
+.qrcode_small>img {
+    width: 64px;
+    height: 63px;
+    margin: 5px 0 2px 4px;
+    border-left: 2px solid #1c65bf;
+    border-radius: 10px;
+}
+.qrcode_small .qrcode_big {
+    position: absolute;
+    top: -158px;
+    left: -83px;
+    width: 157px;
+    height: 158px;
+    background: url("../images/bg_color_small.png") 100% 100%;
+    border-radius: 10px;
+    display: none;
+}
+.qrcode_small .qrcode_big img {
+    width: 150px;
+    height: 150px;
+    border-left: 2px solid #1c65bf;
+    margin: 5px 1px 3px 4px;
+    border-radius: 10px;
+}
+.bottom-bar .ios {
+    float: left;
+    margin-left: 28px;
+    width: 233px;
+    height: 90px;
+    margin-top: 18px;
+}
+.bottom-bar .android {
+    float: left;
+    margin-left: 10px;
+    width: 233px;
+    height: 90px;
+    margin-top: 18px;
+}
+.bottom-bar .container {
+    display: inline-block;/*响应text-align:center属性*/
+}
+/*bottom-bar end*/
+/*footer begin*/
+.footer {
+    height: 132px;
+    background-color: #1d1d1d;
+}
+.footerCon {
+    width: 796px;
+    margin: 0 auto;
+}
+.footerCon .flogo,
+.footerCon .glogo {
+    line-height: 132px;
+    float: left;
+}
+.footerCon .copyright {
+    float: right;
+    font-size: 14px;
+    color: #a3a3a3;
+    margin-top: 50px;
+}
+.copyright li {
+    float: left;
+}
+.copyright li.line {
+     width: 7px;
+     height: 1px;
+     background-color: #a3a3a3;
+     margin: 9px 6px 0 6px;
+ }
+.copyright a {
+    color: #a3a3a3;
+}
+.copyright a:hover {
+    text-decoration: underline;
+    color: #e60013;
+}
+.copyright p {
+    margin-top: 10px;
+}
+.copyright .copy {
+    margin-left: 8px;
+}
+.copyright p a {
+    margin-left: 25px;
+}
+/*footer end*/

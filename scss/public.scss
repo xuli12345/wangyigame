@@ -1,0 +1,124 @@
+/* 头部游戏列表和底部游戏列表公共样式 */
+.game-list {
+  .new-icon,
+  .hot-icon {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background: url(../images/topbar_z_3563e40.png);
+    vertical-align: middle;
+    margin-top: -3px;
+  }
+
+  .new-icon {
+    background-position: -56px -34px;
+  }
+
+  .hot-icon {
+    background-position: -56px -48px;
+  }
+
+  .pc-game, .mobile-game {
+    float: left;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      width: 4px;
+      height: 16px;
+      background-color: #dd1136;
+      float: left;
+      margin-top: 17px;
+      margin-right: 36px;
+    }
+  }
+
+  .pc-game {
+    width: 406px;
+  }
+
+  .game-class {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .game-link {
+    line-height: 1;
+    overflow: hidden;
+    font-size: 14px;
+
+
+    dt {
+      line-height: 56px;
+      font-weight: 800;
+      padding-top: 8px;
+      padding-left: 4px;
+    }
+
+    dd {
+      line-height: 28px;
+
+      i {
+        margin-left: 6px;
+      }
+
+      a:hover {
+        font-weight: 800;
+      }
+    }
+  }
+
+  .role,
+  .athletics,
+  .hot-rec,
+  .news-rec {
+    float: left;
+    overflow: hidden;
+  }
+
+  .role {
+    width: 262px;
+    height: 400px;
+
+    dl {
+      margin-right: -20px;
+    }
+
+    dd {
+      width: 137px;
+      float: left;
+    }
+  }
+
+  .athletics {
+    width: 108px;
+    padding-left: 35px;
+    height: 476px;
+    margin-top: -50px;
+    padding-top: 50px;
+
+  }
+
+  .hot-rec {
+    width: 140px;
+    padding-left: 35px;
+    height: 764px;
+  }
+
+  .news-rec {
+    padding-left: 35px;
+    width: 602px;
+    overflow: hidden;
+
+    dl {
+      margin-right: -20px;
+    }
+
+    dd {
+      width: 145px;
+      float: left;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+/* 公共样式 */
+/* 头部游戏列表和底部游戏列表公共样式_开始 */
+.game-list .new-icon,
+.game-list .hot-icon {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background: url(../images/topbar_z_3563e40.png);
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.game-list .new-icon {
+  background-position: -56px -34px;
+}
+.game-list .hot-icon {
+  background-position: -56px -48px;
+}
+.game-list .pc-game, .game-list .mobile-game {
+  float: left;
+  overflow: hidden;
+}
+.game-list .pc-game:before, .game-list .mobile-game:before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background-color: #dd1136;
+  float: left;
+  margin-top: 17px;
+  margin-right: 36px;
+}
+.game-list .pc-game {
+  width: 406px;
+}
+.game-list .game-class {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.game-list .game-link {
+  line-height: 1;
+  overflow: hidden;
+  font-size: 14px;
+}
+.game-list .game-link dt {
+  line-height: 56px;
+  font-weight: 800;
+  padding-top: 8px;
+  padding-left: 4px;
+}
+.game-list .game-link dd {
+  line-height: 28px;
+}
+.game-list .game-link dd i {
+  margin-left: 6px;
+}
+.game-list .game-link dd a:hover {
+  font-weight: 800;
+}
+.game-list .role,
+.game-list .athletics,
+.game-list .hot-rec,
+.game-list .news-rec {
+  float: left;
+  overflow: hidden;
+}
+.game-list .role {
+  width: 262px;
+  height: 400px;
+}
+.game-list .role dl {
+  margin-right: -20px;
+}
+.game-list .role dd {
+  width: 137px;
+  float: left;
+}
+.game-list .athletics {
+  width: 108px;
+  padding-left: 35px;
+  height: 476px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+.game-list .hot-rec {
+  width: 140px;
+  padding-left: 35px;
+  height: 764px;
+}
+.game-list .news-rec {
+  padding-left: 35px;
+  width: 602px;
+  overflow: hidden;
+}
+.game-list .news-rec dl {
+  margin-right: -20px;
+}
+.game-list .news-rec dd {
+  width: 145px;
+  float: left;
+}
+/* 头部游戏列表和底部游戏列表公共样式_结束 */
+/* 不支持ie浏览器代码开始 */
+.ie-layer {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.info-logo {
+  position: absolute;
+  width: 177px;
+  right: 62px;
+  bottom: 50px;
+  height: 58px;
+  background: url(../images/logo1_d853983.png);
+}
+
+.ie-info-header {
+  width: 100%;
+  background: #fff;
+  height: 102px;
+  border-bottom: 1px solid #c81331;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  left: 0;
+}
+.ie-info-header .info-txt {
+  text-align: center;
+  line-height: 102px;
+}
+
+.info-window {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 564px;
+  height: 284px;
+  border-top: 4px solid #c81331;
+  margin-left: -282px;
+  margin-top: -141px;
+  background-color: #fff;
+}
+.info-window .info-txt {
+  line-height: 32px;
+  padding-top: 43px;
+  padding-left: 62px;
+}
+.info-window .chrome-down {
+  position: absolute;
+  left: 63px;
+  top: 125px;
+}
+
+.info-close {
+  position: absolute;
+  width: 63px;
+  background-color: #c81331;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 63px;
+  height: 63px;
+  right: -63px;
+  top: -4px;
+  cursor: pointer;
+}
+.info-close:hover {
+  background-color: #a10a23;
+}
+
+.info-txt {
+  font-size: 20px;
+  color: #000;
+}
+
+.chrome-down {
+  width: 189px;
+  background-color: #c81331;
+  text-align: center;
+  line-height: 63px;
+  height: 63px;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+}
+.chrome-down:hover {
+  background-color: #a10a23;
+}
+
+/* 不支持ie浏览器代码结束 */

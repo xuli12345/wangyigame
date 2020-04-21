@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>网易-热爱游戏者</title>
+	<link rel="shortcut icon" href="http://game.163.com/favicon.ico">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/固定盒子.css">
+	<style>
+		.section {
+			text-align: center;
+			font: 50px "Microsoft Yahei";
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="fixedbox">
+	<a href="../index.html" class="logo" style="background: url(images/logo_110833f.png) ">网易游戏</a>
+	<div class="tab">
+		<ul>
+			<li><a href="#">游戏，热爱才懂</a></li>
+			<li><a href="#">网易游戏APP</a></li>
+			<li><a href="#">关于网易游戏</a></li>
+			<li><a href="#">人才招聘</a></li>
+			<li><a href="#">客服中心</a></li>
+		</ul>
+	<button class="btn1"></button>
+	</div>
+	<!-- <a href="#" class="arrow" style="background: url(images/ico-arrow_0550dda.png) "></a> -->
+
+</div>
+
+	<div id="box" >
+		<div class="section" style="background: url(images/vision-1_b41c4e1.jpg) " >
+			<div class="show words1">
+				<img class="txt-1" src="images/title-font-1_90d25aa.png" width="230" height="169">
+				<img class="txt-2" src="images/title-font-2_3be9b12.png" width="424" height="131">
+				<img class="txt-3" src="images/title-font-3_bb665a7.png" width="340" height="137">
+				<img class="txt-4" src="images/title-font-4_bba2b7f.png" width="322" height="13">
+				<img class="txt-5" src="images/title-font-5_b6ba938.png" width="290" height="13">
+			</div>
+		</div>
+		<div class="section " style="background: url(images/vision-6_b5ee203.jpg) ">
+			<div class="show words2">
+				<img src="images/screen-6-txt_61a20c3.png" width="448" height="160">
+				<div class="slogen"><img src="images/slogen_7c7bf41.png" width="151" height="40"></div>
+			</div>
+		</div>
+		<div class="section " style="background: url(images/vision-3_12e9e7f.jpg)">
+			<div class="show words3">
+				<img src="images/screen-3-txt_8e7a5fc.png" width="355" height="223">
+				<div class="slogen"><img src="images/slogen_7c7bf41.png" width="151" height="40"></div>
+			</div>
+		</div>
+		<div class="section " style="background: url(images/vision-5_e844412.jpg)">
+			<div class="show words4">
+				<img src="images/screen-5-txt_24142a3.png" width="299" height="185">
+				<div class="slogen"><img src="images/slogen_7c7bf41.png" width="151" height="40"></div>
+			</div>
+		</div>
+		<div class="section " style="background: url(images/vision-4_099cc85.jpg)">
+			<div class="show words5">
+				<img src="images/screen-4-txt_f90cceb.png" width="282" height="85">
+				<div class="slogen"><img src="images/slogen_7c7bf41.png" width="151" height="40"></div>
+			</div>
+		</div>
+		<div class="section " style="background: url(images/vision-2_0a7c125.jpg)">
+			<div class="show words6">
+				<img src="images/screen-2-txt_8427632.png" width="312" height="236">
+				<div class="slogen"><img src="images/slogen_7c7bf41.png" width="151" height="40"></div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
+<script src="JS文件/jquery-1.8.3.min.js"></script>
+<script src="JS文件/jquery.fullPage.js"></script>
+<script>
+	$(function () {
+		$(".words1").fadeIn().animate({ top: '50%', 'opacity': 1 }, 2000).find('img').fadeIn()
+		$('#box').fullpage({
+			"fixedbox": '#fixedbox',
+			'navigation': true,
+			"arrow": 'menu',
+			'onLeave': function (index, direction) {
+				$(".words" + index).delay(200).stop().animate({
+					top: 0,
+					opacity: 0
+				}, 1500)
+				// if(index == 1){
+				// 	$('.words1').delay(200).animate({
+				// 		top: 0,
+				// 		opacity: 0
+				// 	}, 1500);
+				// }
+				// if(index == 2){
+				// 	$('.words2').delay(200).animate({
+				// 		top: 0,
+				// 		opacity: 0
+				// 	}, 1500);
+				// }
+				// if(index == 3){
+				// 	$('.words3').delay(200).animate({
+				// 		opacity: 0,
+				// 		top: 0
+				// 	}, 1500);
+				// }
+				// if(index == 4){
+				// 	$('.words4').delay(200).animate({
+				// 		opacity: 0,
+				// 		top: 0
+				// 	}, 1500);
+				// }
+
+			},
+			afterLoad: function (anchorLink, index) {
+				console.log(snum);
+				// num = index;
+				$(".words" + index).delay(200).stop().animate({
+					top: '50%',
+						opacity: 1
+				}, 1500)
+			},
+
+
+		});
+
+	});
+</script>
+<script src="JS文件/动画效果.js"></script>
